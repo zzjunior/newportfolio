@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "hello": "Olá, eu sou",
+    "description": "Desenvolvedor de Software com experiência em múltiplos segmentos. Especializado em estruturar e documentar processos de desenvolvimento.",
+    "Ei": "Ei",
+    "photoAlt": "Foto do perfil de"
+  },
+  "about": {
+    "title": "Sobre mim?",
+    "summary": "Um amante de tecnologia! Meu verdadeiro início neste universo se deu em 2019, quando ganhei meu primeiro computador, desde então venho estudando e me aprimorando em diversas áreas, de hardware a software. Trabalho na área de TI desde 2020, onde comecei a estudar programação, desde então venho me aprimorando e sempre em busca de novos desafios e novos aprendizados. Hoje atuo no mercado tanto em meu trabalho atual na gestão operacional do [TEIA CRM](https://teiacrm.com.br), e também como freelancer na [Agência TJ](https://agenciatj.com.br) criada por mim quando comecei na área estou sempre estudando e buscando inovar meus conhecimentos, atualmente as áreas onde mais tenho interesse são desenvolvimento web, automação de processos utilizando inteligência artificial e programação, mas também estou me aventurando bastante em análise de dados."
+  },
+  "experience": {
+    "title": "Experiência",
+    "description": "Experiência relevante que tive em minha carreira.",
+    "zenvia": {
+      "title": "Desenvolvedor Front End",
+      "start": "Ago 2023",
+      "end": "Presente",
+      "description": "Liderei a criação de novas integrações de ERPs terceiros com o Zenvia Customer Cloud, facilitando a integração de dados de clientes com o sistema da empresa. Também colaborei com a manutenção de algumas funcionalidades do Zenvia Servir (Antigo SenseData).",
+      "location": "São Paulo, Brasil"
+    },
+    "catency": {
+      "title": "Desenvolvedor Front End",
+      "start": "Jul 2023",
+      "end": "Presente",
+      "description": "Liderei o desenvolvimento de landing pages e sites institucionais para clientes da empresa como a Regina Festas, empresa de decoração de festas infantis e K2L, agência de desenvolvimento de artistas e influenciadores.",
+      "location": "São Paulo, Brasil"
+    },
+    "webgru": {
+      "title": "Desenvolvedor Front End",
+      "start": "Abr 2023",
+      "end": "Ago 2023",
+      "description": "Liderei o desenvolvimento de plataforma e-commerce da FatBurners, empresa vendedora de suplementos alimentares Austríaca.",
+      "location": "São Paulo, Brasil"
+    },
+    "umbler1": {
+      "title": "Desenvolvedor Full Stack",
+      "start": "Fev 2022",
+      "end": "Abr 2023",
+      "description": "Liderei projetos como: Health Score para gerenciamento de clientes, Design System utilizado pelos produtos da empresa e plataforma interna para gerenciamento de documentações e treinamentos. Também colaborei em produtos como o UHost, plataforma de hospedagem Wordpress.",
+      "location": "Rio Grande do Sul, Brasil"
+    },
+    "umbler2": {
+      "title": "Analista de Sucesso do Cliente",
+      "start": "Nov 2020",
+      "end": "Fev 2022",
+      "description": "Auxiliei clientes com dúvidas técnicas sobre gerenciamento de domínios, serviços de e-mail profissional, hospedagens Wordpress, FTP e banco de dados SQL. Criei documentações e treinamentos para a equipe de suporte.",
+      "location": "Rio Grande do Sul, Brasil"
+    }
+  },
+  "education": {
+    "title": "Educação",
+    "description": "Faculdades e certificados relevantes que possuo.",
+    "courses": {
+      "title": "Faculdades",
+      "description": "Faculdades que cursei ou estou cursando.",
+      "ifsul": {
+        "course": "Informática para a Internet - Técnico",
+        "location": "Rio Grande do Sul, Brasil",
+        "endDate": "Dezembro 2022"
+      },
+      "descomplica": {
+        "course": "Análise e Desenvolvimento de Sistemas - Tecnólogo",
+        "location": "São Paulo, Brasil",
+        "endDate": "Outubro 2025"
+      }
+    },
+    "certificates": {
+      "title": "Certificados",
+      "description": "Certificados de cursos e eventos que realizei.",
+      "conclusion": "Certificado de Conclusão"
+    }
+  },
+  "skills-and-projects": {
+    "title": "Habilidades & Projetos",
+    "skills": {
+      "title": "Habilidades",
+      "description": "Expertises técnicas e organizacionais que utilizo no meu trabalho.",
+      "tech": "Técnicas",
+      "organizational": {
+        "title": "Organizacional",
+        "scrum": "Scrum",
+        "kanban": "Kanban",
+        "code-doc": "Documentação de Código",
+        "tech-research": "Pesquisas Técnicas"
+      },
+      "languages": {
+        "title": "Linguás",
+        "pt": "Português",
+        "en": "Inglês"
+      }
+    },
+    "projects": {
+      "title": "Projetos",
+      "description": "Produtos e plataformas em que liderei e/ou colaborei para sua criação.",
+      "zcc": {
+        "start": "Ago 2023",
+        "end": "Atual",
+        "description": "Plataforma de comunicação omnichannel que ajuda empresas a se conectarem com seus clientes por meio de chatbots, disparo de mensagens em massa e muito mais."
+      },
+      "magic": {
+        "start": "Dez 2024",
+        "end": "Atual",
+        "description": "Biblioteca com mais de 50 componentes gratuitos para desenvolvedores e engenheiros front-end utilizarem em seus projetos."
+      },
+      "code-hub": {
+        "start": "Out 2024",
+        "end": "Atual",
+        "description": "Acervo de projetos que criei para estudar e testar tecnologias, design patterns e metodologias."
+      },
+      "h3-lint": {
+        "start": "Dez 2024",
+        "end": "Jan 2025",
+        "description": "Um guia completo para configurar seu projeto com minhas configurações favoritas de ESLint e Prettier usando frameworks como React, Next.js e Vue."
+      },
+      "cash-in-hand": {
+        "start": "Fev 2025",
+        "end": "Fev 2025",
+        "description": "Plataforma de gerenciamento de finanças pessoais com controle de fluxo de caixa, categorização de despesas e receitas, além de relatórios e gráficos."
+      }
+    }
+  },
+  "contact": {
+    "title": "Entre em contato",
+    "content": "Quer conversar? Você pode me enviar uma mensagem no [meu e-mail](mailto:isaachermel@gmail.com) ou em meu [WhatsApp](https://wa.me/+5551997099876)."
+  },
+  "dock": {
+    "theme": "Tema",
+    "language": "Linguagem"
+  },
+  "blog": {
+    "description": "Meu blog pessoal usado para escrever sobre assuntos que tenho interesse e discernir conhecimento.",
+    "no-posts": "Não há posts por enquanto. 😒",
+    "posted": "Postado em",
+    "see-in": "Ver no",
+    "post-in-english": {
+      "title": "Post em inglês",
+      "description": "Os posts que realizo no Dev.to são todos em inglês, portanto mesmo que altere a linguagem da página para português, os posts continuarão em inglês."
+    }
+  }
+}

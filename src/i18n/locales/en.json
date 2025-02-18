@@ -1,0 +1,137 @@
+{
+  "hero": {
+    "hello": "Hello, I am",
+    "description": "Software Developer with experience in multiple segments. Specialized in structuring and documenting development processes.",
+    "hey": "Hey",
+    "photoAlt": "Profile photo of"
+  },
+  "about": {
+    "title": "About me?",
+    "summary": "A technology lover! My real beginning in this universe took place in 2019, when I got my first computer, since then I have been studying and improving myself in different areas, from hardware to software. Working in the IT area since 2020, where I started studying programming, since then I have been improving myself and always looking for new challenges and new learning. Today I work in the market both in my current job in the operational management of [TEIA CRM](https://teiacrm.com.br), and also as a freelancer at the [TJ Agency](https://agenciatj.com.br) created by me when I started in the area. I am always studying and seeking to innovate my knowledge, currently the areas where I am most interested are web development, process automation using artificial intelligence and programming, but I am also venturing a lot into data analysis."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Relevant experience I've had in my career.",
+    "zenvia": {
+      "title": "Front End Developer",
+      "start": "Aug 2023",
+      "end": "Present",
+      "description": "Led the creation of new third-party ERP integrations with Zenvia Customer Cloud, facilitating customer data integration with the company's system. Also collaborated in maintaining some features of Zenvia Servir (Formerly SenseData).",
+      "location": "São Paulo, Brasil"
+    },
+    "catency": {
+      "title": "Front End Developer",
+      "start": "Jul 2023",
+      "end": "Present",
+      "description": "Led the development of landing pages and institutional websites for company clients such as Regina Festas, a children's party decoration company, and K2L, an artist and influencer development agency.",
+      "location": "São Paulo, Brasil"
+    },
+    "webgru": {
+      "title": "Front End Developer",
+      "start": "Apr 2023",
+      "end": "Aug 2023",
+      "description": "Led the development of the e-commerce platform for FatBurners, an Austrian food supplement company.",
+      "location": "São Paulo, Brasil"
+    },
+    "umbler1": {
+      "title": "Full Stack Developer",
+      "start": "Feb 2022",
+      "end": "Apr 2023",
+      "description": "Led projects such as: Health Score for customer management, Design System used by company products, and internal platform for documentation and training management. Also collaborated on products like UHost, a WordPress hosting platform.",
+      "location": "Rio Grande do Sul, Brasil"
+    },
+    "umbler2": {
+      "title": "Customer Success Analyst",
+      "start": "Nov 2020",
+      "end": "Feb 2022",
+      "description": "Assisted customers with technical questions about domain management, professional email services, WordPress hosting, FTP, and SQL databases. Created documentation and training for the support team.",
+      "location": "Rio Grande do Sul, Brasil"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "description": "Relevant colleges and certificates I have.",
+    "courses": {
+      "title": "Colleges",
+      "description": "Colleges I attended or am attending.",
+      "ifsul": {
+        "course": "Internet Computing - Technical",
+        "location": "Rio Grande do Sul, Brazil",
+        "endDate": "December 2022"
+      },
+      "descomplica": {
+        "course": "Systems Analysis and Development - Technologist",
+        "location": "São Paulo, Brazil",
+        "endDate": "October 2025"
+      }
+    },
+    "certificates": {
+      "title": "Certificates",
+      "description": "Certificates from courses and events I completed.",
+      "conclusion": "Certificate of completion"
+    }
+  },
+  "skills-and-projects": {
+    "title": "Skills & Projects",
+    "skills": {
+      "title": "Skills",
+      "description": "Technical and organizational expertise that I use in my work.",
+      "tech": "Technical",
+      "organizational": {
+        "title": "Organizational",
+        "scrum": "Scrum",
+        "kanban": "Kanban",
+        "code-doc": "Code Documentation",
+        "tech-research": "Technical Research"
+      },
+      "languages": {
+        "title": "Languages",
+        "pt": "Portuguese",
+        "en": "English"
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Products and platforms that I led and/or collaborated on their creation.",
+      "zcc": {
+        "start": "Aug 2023",
+        "end": "Present",
+        "description": "ZCC is an omnichannel communication platform that helps companies connect with their customers, offering features like chatbots, mass message sending, and much more."
+      },
+      "magic": {
+        "start": "Dec 2024",
+        "end": "Present",
+        "description": "Library with over 50 free UI components for front-end developers and engineers to use in their platforms or products."
+      },
+      "code-hub": {
+        "start": "Oct 2024",
+        "end": "Present",
+        "description": "Collection of projects I created and developed to learn, study, and test new technologies, design patterns, and methodologies, and of course, share knowledge."
+      },
+      "h3-lint": {
+        "start": "Dec 2024",
+        "end": "Jan 2025",
+        "description": "A complete guide to configure your project with my favorite ESLint and Prettier configurations using frameworks like React, Next.js, and Vue."
+      },
+      "cash-in-hand": {
+        "start": "Feb 2025",
+        "end": "Feb 2025",
+        "description": "Personal finance management platform with cash flow control, expense and incomes categorization, charts and reports."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "content": "Want to talk? You can send me a message at [my email](mailto:isaachermel@gmail.com) or through my [WhatsApp](https://wa.me/+5551997099876)."
+  },
+  "dock": {
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "blog": {
+    "description": "My personal blog used to write about topics I'm interested in and share knowledge.",
+    "no-posts": "There are no posts yet. 😒",
+    "posted": "Posted in",
+    "see-in": "See in"
+  }
+}
