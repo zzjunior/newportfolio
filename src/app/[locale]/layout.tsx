@@ -107,7 +107,7 @@ export default async function RootLayout({
                   className={cn(
                     'absolute inset-0',
                     'flex items-center justify-center',
-                    'pointer-events-none [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]',
+                    'pointer-events-none [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]',
                     'dark:bg-black bg-white',
                   )}
                 />

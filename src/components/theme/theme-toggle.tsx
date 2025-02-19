@@ -25,8 +25,8 @@ export function ThemeToggle() {
           type="button"
           variant="ghost"
         >
-          <SunIcon className="size-3 lg:size-4 text-neutral-800 dark:hidden dark:text-neutral-200" />
-          <MoonIcon className="hidden size-3 lg:size-4 text-neutral-800 dark:block dark:text-neutral-200" />
+          <SunIcon className="size-5 lg:size-4 text-violet-800 dark:hidden dark:text-violet-800" />
+          <MoonIcon className="hidden size-5 lg:size-4 text-violet-800 dark:block dark:text-violet-600" />
         </Button>
       </TooltipTrigger>
       <TooltipContent>

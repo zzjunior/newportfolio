@@ -26,7 +26,7 @@ export function ExperienceCard({
             alt={`${company} logo`}
             className={cn(
               'rounded-full border p-0.5 sm:p-1',
-              'transition-all duration-300 ease-out hover:border-emerald-500',
+              'transition-all duration-300 ease-out hover:border-violet-500',
             )}
             height={48}
             src={logoUrl}

@@ -7,26 +7,33 @@
   },
   "about": {
     "title": "Sobre mim?",
-    "summary": "Um amante de tecnologia! Meu verdadeiro início neste universo se deu em 2019, quando ganhei meu primeiro computador, desde então venho estudando e me aprimorando em diversas áreas, de hardware a software. Trabalho na área de TI desde 2020, onde comecei a estudar programação, desde então venho me aprimorando e sempre em busca de novos desafios e novos aprendizados. Hoje atuo no mercado tanto em meu trabalho atual na gestão operacional do [TEIA CRM](https://teiacrm.com.br), e também como freelancer na [Agência TJ](https://agenciatj.com.br) criada por mim quando comecei na área estou sempre estudando e buscando inovar meus conhecimentos, atualmente as áreas onde mais tenho interesse são desenvolvimento web, automação de processos utilizando inteligência artificial e programação, mas também estou me aventurando bastante em análise de dados."
+    "summary": "Um amante de tecnologia! Meu verdadeiro início neste universo se deu em 2019, quando montei meu primeiro computador, desde então venho estudando e me aprimorando em diversas áreas, de hardware a software. Trabalho na área de TI desde 2020, onde comecei a estudar programação, desde então venho me aprimorando e sempre em busca de novos desafios e novos aprendizados. Hoje atuo no mercado tanto em meu trabalho atual na gestão operacional do [TEIA CRM](https://teiacrm.com.br), e também como freelancer na [Agência TJ](https://agenciatj.com.br) criada por mim quando comecei na área estou sempre estudando e buscando inovar meus conhecimentos, atualmente as áreas onde mais tenho interesse são desenvolvimento web, automação de processos utilizando inteligência artificial e programação, mas também estou me aventurando bastante em análise de dados."
   },
   "experience": {
     "title": "Experiência",
     "description": "Experiência relevante que tive em minha carreira.",
-    "zenvia": {
-      "title": "Desenvolvedor Front End",
-      "start": "Ago 2023",
+    "teia": {
+      "title": "Gestão Operacional",
+      "start": "Ago 2024",
       "end": "Presente",
-      "description": "Liderei a criação de novas integrações de ERPs terceiros com o Zenvia Customer Cloud, facilitando a integração de dados de clientes com o sistema da empresa. Também colaborei com a manutenção de algumas funcionalidades do Zenvia Servir (Antigo SenseData).",
-      "location": "São Paulo, Brasil"
+      "description": "Lidero a gestão operacional do TEIA CRM, auxiliando clientes com dúvidas técnicas sobre o sistema e implementação, gerenciando a equipe de suporte e auxiliando no desenvolvimento de novas funcionalidades e Integrações com sistemas terceiros.",
+      "location": "Rio Grande do Norte, Brasil"
     },
-    "catency": {
+    "teia2": {
+      "title": "Suporte Técnico Pós Venda",
+      "start": "Mar 2023",
+      "end": "Ago 2024",
+      "description": "Liderei a criação de novas integrações de ERPs terceiros com o Zenvia Customer Cloud, facilitando a integração de dados de clientes com o sistema da empresa. Também colaborei com a manutenção de algumas funcionalidades do Zenvia Servir (Antigo SenseData).",
+      "location": "Rio Grande do Norte, Brasil"
+    },
+    "alcance": {
       "title": "Desenvolvedor Front End",
       "start": "Jul 2023",
       "end": "Presente",
       "description": "Liderei o desenvolvimento de landing pages e sites institucionais para clientes da empresa como a Regina Festas, empresa de decoração de festas infantis e K2L, agência de desenvolvimento de artistas e influenciadores.",
       "location": "São Paulo, Brasil"
     },
-    "webgru": {
+    "agencytj": {
       "title": "Desenvolvedor Front End",
       "start": "Abr 2023",
       "end": "Ago 2023",
@@ -34,14 +41,7 @@
       "location": "São Paulo, Brasil"
     },
     "umbler1": {
-      "title": "Desenvolvedor Full Stack",
-      "start": "Fev 2022",
-      "end": "Abr 2023",
-      "description": "Liderei projetos como: Health Score para gerenciamento de clientes, Design System utilizado pelos produtos da empresa e plataforma interna para gerenciamento de documentações e treinamentos. Também colaborei em produtos como o UHost, plataforma de hospedagem Wordpress.",
-      "location": "Rio Grande do Sul, Brasil"
-    },
-    "umbler2": {
-      "title": "Analista de Sucesso do Cliente",
+      "title": "Analista CS Host",
       "start": "Nov 2020",
       "end": "Fev 2022",
       "description": "Auxiliei clientes com dúvidas técnicas sobre gerenciamento de domínios, serviços de e-mail profissional, hospedagens Wordpress, FTP e banco de dados SQL. Criei documentações e treinamentos para a equipe de suporte.",
@@ -72,33 +72,31 @@
     }
   },
   "skills-and-projects": {
-    "title": "Habilidades & Projetos",
+    "title": "Skills & Projetos",
     "skills": {
-      "title": "Habilidades",
-      "description": "Expertises técnicas e organizacionais que utilizo no meu trabalho.",
+      "title": "Skills",
+      "description": "Conhecimentos técnicos e ferramentas que estudo e utilizo.",
       "tech": "Técnicas",
       "organizational": {
         "title": "Organizacional",
-        "scrum": "Scrum",
         "kanban": "Kanban",
-        "code-doc": "Documentação de Código",
+        "code-doc": "Documentação de Código | API's",
         "tech-research": "Pesquisas Técnicas"
       },
       "languages": {
         "title": "Linguás",
-        "pt": "Português",
-        "en": "Inglês"
+        "pt": "Português"
       }
     },
     "projects": {
       "title": "Projetos",
       "description": "Produtos e plataformas em que liderei e/ou colaborei para sua criação.",
-      "zcc": {
+      "imageconvert": {
         "start": "Ago 2023",
         "end": "Atual",
         "description": "Plataforma de comunicação omnichannel que ajuda empresas a se conectarem com seus clientes por meio de chatbots, disparo de mensagens em massa e muito mais."
       },
-      "magic": {
+      "qrcodefree": {
         "start": "Dez 2024",
         "end": "Atual",
         "description": "Biblioteca com mais de 50 componentes gratuitos para desenvolvedores e engenheiros front-end utilizarem em seus projetos."
@@ -108,7 +106,7 @@
         "end": "Atual",
         "description": "Acervo de projetos que criei para estudar e testar tecnologias, design patterns e metodologias."
       },
-      "h3-lint": {
+      "websiteteia": {
         "start": "Dez 2024",
         "end": "Jan 2025",
         "description": "Um guia completo para configurar seu projeto com minhas configurações favoritas de ESLint e Prettier usando frameworks como React, Next.js e Vue."

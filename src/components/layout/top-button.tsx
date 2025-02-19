@@ -21,7 +21,7 @@ export function TopButton() {
           type="button"
           variant="ghost"
         >
-          <ChevronUp className="size-3 lg:size-4 text-neutral-800 dark:text-neutral-200" />
+          <ChevronUp className="size-3 lg:size-4 text-violet-800 dark:text-violet-400" />
         </Button>
       </TooltipTrigger>
       <TooltipContent>

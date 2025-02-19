@@ -30,7 +30,7 @@ export function ProjectCard({
   const t = useTranslations('skills-and-projects.projects');
 
   return (
-    <Card className={cn('flex flex-col', 'h-full')}>
+    <Card className={cn('flex flex-col', 'h-full', 'hover:scale-105 transition-transform duration-200')}>
       <CardHeader
         className={cn(
           'relative',
@@ -57,7 +57,7 @@ export function ProjectCard({
             </video>
           ) : null}
           {bannerImageUrl ? (
-            <Image
+            <Image 
               alt={title}
               className="rounded-sm object-cover"
               fill={true}

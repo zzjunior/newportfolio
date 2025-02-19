@@ -38,7 +38,7 @@ export function Hero() {
                 'lg:flex lg:flex-col',
               )}
             >
-              {`${t('hello')}`} <span>{DATA.name} 👋</span>
+              {`${t('hello')}`} <span>{DATA.name} 🎯</span>
             </h1>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY}>
@@ -50,7 +50,7 @@ export function Hero() {
             <TooltipTrigger asChild>
               <Avatar
                 className={cn(
-                  'size-32 border p-1 transition-all duration-300 ease-out hover:border-emerald-500',
+                  'size-32 border p-1 transition-all duration-300 ease-out hover:border-violet-500',
                 )}
               >
                 <AvatarImage
@@ -62,7 +62,7 @@ export function Hero() {
               </Avatar>
             </TooltipTrigger>
             <TooltipContent side="bottom">
-              <p className={cn('text-xl')}>E aí 😁</p>
+              <p className={cn('text-xl')}> Eaí! Tudo bem?</p>
             </TooltipContent>
           </Tooltip>
         </BlurFade>
