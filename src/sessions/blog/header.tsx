@@ -25,7 +25,7 @@ export function Header() {
               'text-3xl sm:text-4xl xl:text-5xl',
             )}
           >
-            Blog
+            Posts
           </h1>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY}>

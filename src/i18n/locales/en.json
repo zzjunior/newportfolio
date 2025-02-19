@@ -7,41 +7,34 @@
   },
   "about": {
     "title": "About me?",
-    "summary": "A technology lover! My real beginning in this universe took place in 2019, when I got my first computer, since then I have been studying and improving myself in different areas, from hardware to software. Working in the IT area since 2020, where I started studying programming, since then I have been improving myself and always looking for new challenges and new learning. Today I work in the market both in my current job in the operational management of [TEIA CRM](https://teiacrm.com.br), and also as a freelancer at the [TJ Agency](https://agenciatj.com.br) created by me when I started in the area. I am always studying and seeking to innovate my knowledge, currently the areas where I am most interested are web development, process automation using artificial intelligence and programming, but I am also venturing a lot into data analysis."
+    "summary": "A technology lover! My real beginning in this universe took place in 2019, when I built my first computer, since then I have been studying and improving myself in different areas, from hardware to software. I have worked in the IT area since 2020, where I started studying programming, since then I have been improving myself and always looking for new challenges and new learning. Today I work in the market both in my current work in the operational management of [TEIA CRM](https://teiacrm.com.br), and also as a freelancer at [Agência TJ](https://agenciatj.com.br) created by me when I started in the area, I am always studying and seeking to innovate my knowledge, currently the areas where I am most interested are web development, process automation using artificial intelligence and programming, but I am also venturing a lot into data analysis."
   },
   "experience": {
     "title": "Experience",
     "description": "Relevant experience I've had in my career.",
-    "zenvia": {
+    "teia": {
       "title": "Front End Developer",
       "start": "Aug 2023",
       "end": "Present",
       "description": "Led the creation of new third-party ERP integrations with Zenvia Customer Cloud, facilitating customer data integration with the company's system. Also collaborated in maintaining some features of Zenvia Servir (Formerly SenseData).",
       "location": "São Paulo, Brasil"
     },
-    "catency": {
+    "alcance": {
       "title": "Front End Developer",
       "start": "Jul 2023",
       "end": "Present",
       "description": "Led the development of landing pages and institutional websites for company clients such as Regina Festas, a children's party decoration company, and K2L, an artist and influencer development agency.",
       "location": "São Paulo, Brasil"
     },
-    "webgru": {
-      "title": "Front End Developer",
+    "agencytj": {
+      "title": "Web Developer",
       "start": "Apr 2023",
       "end": "Aug 2023",
       "description": "Led the development of the e-commerce platform for FatBurners, an Austrian food supplement company.",
       "location": "São Paulo, Brasil"
     },
     "umbler1": {
-      "title": "Full Stack Developer",
-      "start": "Feb 2022",
-      "end": "Apr 2023",
-      "description": "Led projects such as: Health Score for customer management, Design System used by company products, and internal platform for documentation and training management. Also collaborated on products like UHost, a WordPress hosting platform.",
-      "location": "Rio Grande do Sul, Brasil"
-    },
-    "umbler2": {
-      "title": "Customer Success Analyst",
+      "title": "Customer Success Host Analyst",
       "start": "Nov 2020",
       "end": "Feb 2022",
       "description": "Assisted customers with technical questions about domain management, professional email services, WordPress hosting, FTP, and SQL databases. Created documentation and training for the support team.",
@@ -79,15 +72,13 @@
       "tech": "Technical",
       "organizational": {
         "title": "Organizational",
-        "scrum": "Scrum",
         "kanban": "Kanban",
         "code-doc": "Code Documentation",
         "tech-research": "Technical Research"
       },
       "languages": {
         "title": "Languages",
-        "pt": "Portuguese",
-        "en": "English"
+        "pt": "Portuguese"
       }
     },
     "projects": {

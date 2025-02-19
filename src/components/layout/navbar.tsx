@@ -33,15 +33,15 @@ export function Navbar({ locale }: NavbarProps) {
         'fixed bottom-0 inset-x-0 z-50 origin-bottom',
         'pointer-events-none',
         'mx-auto mb-4',
-        'h-full max-h-14',
+        'h-full max-h-14'
       )}
     >
       <div
         className={cn(
           'fixed bottom-0 inset-x-0',
           'h-16 w-full',
-          'bg-gradient-to-t from-bg-background to-transparent backdrop-blur-lg',
-          '[-webkit-mask-image:linear-gradient(to_top,black,transparent)]',
+          'bg-gradient-to-t from-bg-background backdrop-lg',
+          '[-webkit-mask-image:linear-gradient(to_top,black,transparent)]'
         )}
       />
       <Dock
@@ -49,8 +49,8 @@ export function Navbar({ locale }: NavbarProps) {
           'relative',
           'rounded-lg',
           'mx-auto mb-4 px-2',
-          'bg-background/60 border-border backdrop-blur-md',
-          'pointer-events-auto transform-gpu',
+          'bg-background/100 border-border backdrop-md',
+          'pointer-events-auto transform-gpu'
         )}
         distance={128}
         magnification={48}
@@ -64,13 +64,11 @@ export function Navbar({ locale }: NavbarProps) {
                   className={cn(
                     buttonVariants({ variant: 'ghost', size: 'icon' }),
                     'size-10 rounded-full',
-                    path === `/${locale}${item.href}` ? 'bg-foreground/10' : '',
+                    path === `/${locale}${item.href}` ? 'bg-foreground/10' : ''
                   )}
-                  href={
-                    item.href === '/' ? `/${locale}` : `/${locale}${item.href}`
-                  }
+                  href={item.href === '/' ? `/${locale}` : `/${locale}${item.href}`}
                 >
-                  <item.icon className="size-3 lg:size-4" />
+                  <item.icon className="size-3 lg:size-4 text-violet-900 dark:text-violet-500" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -88,12 +86,12 @@ export function Navbar({ locale }: NavbarProps) {
                   aria-label={`${item.label}'s profile`}
                   className={cn(
                     buttonVariants({ variant: 'ghost', size: 'icon' }),
-                    'size-10 rounded-full',
+                    'size-10 rounded-full'
                   )}
                   href={item.href}
                   target="_blank"
                 >
-                  <item.icon className="size-3 lg:size-4" />
+                  <item.icon className="size-3 lg:size-4 text-violet-900 dark:text-violet-500" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -110,9 +108,7 @@ export function Navbar({ locale }: NavbarProps) {
           <LocaleToggle />
         </DockIcon>
         {scrollY > 1000 ? (
-          <DockIcon
-            className={cn('transition-all duration-300 hidden lg:block')}
-          >
+          <DockIcon className={cn('transition-all duration-300 hidden lg:block')}>
             <BlurFade delay={BLUR_FADE_DELAY} yOffset={0}>
               <TopButton />
             </BlurFade>

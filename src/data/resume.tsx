@@ -23,32 +23,27 @@ export const DATA: Resume = {
       href: '/',
       icon: Home,
       label: 'Home',
-    },
-    {
-      href: '/blog',
-      icon: Notebook,
-      label: 'Blog',
-    },
+    }
   ],
   // Experience
   experience: [
     {
       company: 'Teia',
-      companyKey: 'zenvia',
+      companyKey: 'teia',
       href: 'https://teiacrm.com.br/',
       logoUrl: '/work/teia.webp',
     },
     {
-      company: 'Alcance Vendas',
-      companyKey: 'catency',
-      href: 'https://www.alcancevendas.com.br/',
-      logoUrl: '/work/alcance.webp',
+      company: 'Teia',
+      companyKey: 'teia2',
+      href: 'https://teiacrm.com.br/',
+      logoUrl: '/work/teia.webp',
     },
     {
       company: 'TJ Agency',
-      companyKey: 'webgru',
-      href: 'https://www.webgru.de/en/',
-      logoUrl: '/work/webgru.webp',
+      companyKey: 'agencytj',
+      href: 'https://agenciatj.com.br/',
+      logoUrl: '/work/tj.webp',
     },
     {
       company: 'Umbler',
@@ -56,20 +51,14 @@ export const DATA: Resume = {
       href: 'https://www.umbler.com/br',
       logoUrl: '/work/umbler.webp',
     },
-    {
-      company: 'Umbler',
-      companyKey: 'umbler2',
-      href: 'https://www.umbler.com/br',
-      logoUrl: '/work/umbler.webp',
-    },
   ],
   // Education
   education: [
     {
-      school: 'IFSul',
-      schoolKey: 'ifsul',
-      href: 'https://www.ifsul.edu.br/',
-      logoUrl: '/education/ifsul.webp',
+      school: 'UFRN',
+      schoolKey: 'ufrn',
+      href: 'https://www.ufrn.edu.br/',
+      logoUrl: '/education/logo-ufrn.webp',
     },
     {
       school: 'Descomplica',
@@ -105,93 +94,72 @@ export const DATA: Resume = {
   // Skills
   skills: {
     tech: [
-      'React',
-      'Next',
-      'Vue',
+      'PHP',
+      'JavaScript',
       'Node',
-      'Nest',
-      'Jest',
-      'Flask',
       'Python',
+      'Next',
       'TypeScript',
-      'SEO',
-      'CI/CD',
-      'Docker',
     ],
-    organizational: ['scrum', 'kanban', 'code-doc', 'tech-research'],
-    languages: ['pt', 'en'],
+    organizational: ['kanban', 'code-doc', 'tech-research'],
+    languages: ['pt'],
   },
   // Projects
   projects: [
     {
-      videoUrl: 'https://cdn.magicui.design/bento-grid.mp4',
-      href: 'https://magicui.design/',
-      title: 'MagicUI',
-      projectKey: 'magic',
+      bannerImageUrl: '/projects/image.convert.webp',
+      href: 'https://conversor.clickston.com.br/',
+      title: 'image.convert',
+      projectKey: 'imageconvert',
       links: [
         {
           type: 'Website',
           icon: <GlobeIcon />,
-          href: 'https://magicui.design/',
+          href: 'https://conversor.clickston.com.br/',
         },
         {
           type: 'Source',
           icon: <Github />,
-          href: 'https://github.com/magicuidesign/magicui',
+          href: 'https://github.com/zzjunior/image.convert',
         },
       ],
-      skills: ['React', 'Next', 'TypeScript', 'Tailwind CSS', 'Shadcn UI'],
+      skills: ['JavaScript', 'HTML', 'CSS'],
     },
-    // H3 Lint
+    // QR code
     {
-      bannerImageUrl: '/projects/h3-lint.webp',
-      href: 'https://github.com/h3rmel/h3-lint',
-      title: 'H3 Lint',
-      projectKey: 'h3-lint',
+      bannerImageUrl: '/projects/qrcode.webp',
+      href: 'https://qrcode.clickston.com.br/',
+      title: 'QrCode Free',
+      projectKey: 'qrcodefree',
       links: [
+        {
+          type: 'Website',
+          icon: <GlobeIcon />,
+          href: 'https://qrcode.clickston.com.br/',
+        },
         {
           type: 'Source',
           icon: <Github />,
-          href: 'https://github.com/h3rmel/h3-lint',
+          href: 'https://github.com/zzjunior/QRcodeFree',
         },
       ],
       skills: ['ESLint', 'Prettier', 'TypeScript', 'React', 'Next', 'Vue'],
     },
-    // Code Hub
+    // website Teia
     {
-      bannerImageUrl: '/projects/code-hub.webp',
-      href: 'https://github.com/h3rmel/code-hub/',
-      title: 'Code Hub',
-      projectKey: 'code-hub',
-      links: [
-        {
-          type: 'Source',
-          icon: <Github />,
-          href: 'https://github.com/h3rmel/code-hub/',
-        },
-      ],
-      skills: ['TypeScript', 'Python', 'React', 'Next', 'Nest', 'Flask'],
-    },
-    // Cash In Hand
-    {
-      bannerImageUrl: '/projects/cash-in-hand.webp',
-      href: 'https://github.com/h3rmel/cash-in-hand',
-      title: 'Cash In Hand',
-      projectKey: 'cash-in-hand',
+      bannerImageUrl: '/projects/website-teia.webp',
+      href: 'https://teiacrm.com.br',
+      title: 'Website Teia',
+      projectKey: 'websiteteia',
       links: [
         {
           type: 'Website',
           icon: <GlobeIcon />,
-          href: 'https://cash-in-hand.vercel.app/',
-        },
-        {
-          type: 'Source',
-          icon: <Github />,
-          href: 'https://github.com/h3rmel/cash-in-hand',
+          href: 'https://teiacrm.com.br',
         },
       ],
-      skills: ['React', 'Next', 'TypeScript', 'Clerk', 'Drizzle', 'Shadcn UI'],
-    },
+      skills: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+    }
   ],
   // Contact
   contact: {

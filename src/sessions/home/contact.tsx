@@ -23,8 +23,8 @@ export function Contact() {
             </h2>
             <Markdown
               className={cn(
-                'prose w-full md:max-w-[80%] text-pretty text-sm sm:text-base text-muted-foreground dark:prose-invert',
-                'hover:prose-a:text-emerald-500 prose-a:transition-all prose-a:duration-300 prose-a:ease-out',
+                'prose w-full md:max-w-[100%] text-pretty text-sm sm:text-base text-muted-foreground dark:prose-invert',
+                'hover:prose-a:text-violet-500 prose-a:transition-all prose-a:duration-300 prose-a:ease-out',
               )}
             >
               {t('content')}
