@@ -1,108 +1,115 @@
-/* eslint-disable jsx-a11y/media-has-caption */
-
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import Link from 'next/link';
-
-import { cn } from '@/lib/utils';
-
-import { LinkPreview } from './acertinity-ui/link-preview';
-import { Badge } from './ui/badge';
-import { Button } from './ui/button';
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from './ui/card';
-import { Separator } from './ui/separator';
+} from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import Markdown from "react-markdown";
+
+interface Props {
+  title: string;
+  href?: string;
+  description: string;
+  dates: string;
+  tags: readonly string[];
+  link?: string;
+  image?: string;
+  video?: string;
+  links?: readonly {
+    icon: React.ReactNode;
+    type: string;
+    href: string;
+  }[];
+  className?: string;
+}
 
 export function ProjectCard({
-  bannerImageUrl,
-  videoUrl,
-  skills,
   title,
-  projectKey,
   href,
+  description,
+  dates,
+  tags,
+  link,
+  image,
+  video,
   links,
-}: ProjectCardProps) {
-  const t = useTranslations('skills-and-projects.projects');
-
+  className,
+}: Props) {
   return (
-    <Card className={cn('flex flex-col', 'h-full', 'hover:scale-105 transition-transform duration-200')}>
-      <CardHeader
-        className={cn(
-          'relative',
-          'aspect-video',
-          'p-3 rounded-lg border-b',
-          'group-hover:border-foreground/50',
-        )}
+    <Card
+      className={
+      "flex flex-col overflow-hidden border hover:shadow-lg hover:scale-105 transition-all duration-300 ease-out h-full"
+      }
+    >
+      <Link
+      href={href || "#"}
+      className={cn("block cursor-pointer", className)}
       >
-        <Link
-          className={cn('w-full h-full', 'relative block cursor-pointer')}
-          href={href || '#'}
-        >
-          {videoUrl ? (
-            <video
-              autoPlay={true}
-              className={cn(
-                'pointer-events-none rounded-sm object-cover w-full max-h-[223px]',
-              )}
-              loop={true}
-              playsInline={true}
-              preload="auto"
-            >
-              <source src={videoUrl} />
-            </video>
-          ) : null}
-          {bannerImageUrl ? (
-            <Image 
-              alt={title}
-              className="rounded-sm object-cover"
-              fill={true}
-              quality={100}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              src={bannerImageUrl}
-            />
-          ) : null}
-        </Link>
+      {video && (
+        <video
+        src={video}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+        />
+      )}
+      {image && (
+        <Image
+        src={image}
+        alt={title}
+        width={500}
+        height={300}
+        className="h-40 w-full overflow-hidden object-cover object-top"
+        />
+      )}
+      </Link>
+      <CardHeader className="px-2">
+      <div className="space-y-1">
+        <CardTitle className="mt-1 text-base">{title}</CardTitle>
+        <time className="font-sans text-xs">{dates}</time>
+        <div className="hidden font-sans text-xs underline print:visible">
+        {link?.replace("https://", "").replace("www.", "").replace("/", "")}
+        </div>
+        <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+        {description}
+        </Markdown>
+      </div>
       </CardHeader>
-      <CardHeader className={cn('p-3')}>
-        <CardTitle>{title}</CardTitle>
-        <time className={cn('text-xs text-muted-foreground')}>
-          {t(`${projectKey}.start`)} - {t(`${projectKey}.end`)}
-        </time>
-        <p
-          className={cn(
-            'prose max-w-full text-pretty text-xs text-muted-foreground dark:prose-invert',
-          )}
-        >
-          {t(`${projectKey}.description`)}
-        </p>
-      </CardHeader>
-      <Separator />
-      <CardContent className={cn('p-3', 'flex flex-wrap gap-1.5')}>
-        {links.length > 0 ? (
-          <div className="flex flex-row flex-wrap items-start gap-3">
-            {links.map((link, idx) => (
-              <Button asChild key={idx} size="sm" variant="outline">
-                <LinkPreview url={link.href}>
-                  {link.icon}
-                  {link.type}
-                </LinkPreview>
-              </Button>
-            ))}
-          </div>
-        ) : null}
-      </CardContent>
-      <Separator />
-      <CardFooter className={cn('p-3', 'flex flex-wrap items-end gap-1')}>
-        {skills.map((skill, index) => (
-          <Badge className={cn('text-[10px]')} key={index}>
-            {skill}
+      <CardContent className="mt-auto flex flex-col px-2">
+      {tags && tags.length > 0 && (
+        <div className="mt-2 flex flex-wrap gap-1">
+        {tags?.map((tag) => (
+          <Badge
+          className="px-1 py-0 text-[10px]"
+          variant="secondary"
+          key={tag}
+          >
+          {tag}
           </Badge>
         ))}
+        </div>
+      )}
+      </CardContent>
+      <CardFooter className="px-2 pb-2">
+      {links && links.length > 0 && (
+        <div className="flex flex-row flex-wrap items-start gap-1">
+        {links?.map((link, idx) => (
+          <Link href={link?.href} key={idx} target="_blank">
+          <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+            {link.icon}
+            {link.type}
+          </Badge>
+          </Link>
+        ))}
+        </div>
+      )}
       </CardFooter>
     </Card>
   );
