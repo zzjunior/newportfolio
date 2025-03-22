@@ -130,7 +130,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "/teia-clip.ts",
+        "/teia-clip.mp4",
     },
     {
       title: "Qrcode Generator",
@@ -158,7 +158,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "/qrcode-clip.ts",
+        "/qrcode-clip.mp4",
     },
     {
       title: "image.convert",
@@ -185,7 +185,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/image-convert-clip.ts",
+      video: "/image-convert-clip.mp4",
     }
   ],
   hackathons: [
