@@ -19,22 +19,25 @@ export default function Page() {
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+              delay={BLUR_FADE_DELAY}
+              className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+              yOffset={8}
+              text={DATA.name}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
+              className="max-w-[600px] md:text-xl"
+              delay={BLUR_FADE_DELAY}
+              text={DATA.description}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <div className="relative group hover:scale-105 transition-transform duration-300">
+              <div className="absolute inset-0 border-2 border-transparent rounded-full transform scale-110 transition-all duration-300 group-hover:border-violet-500"></div>
+              <Avatar className="relative size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
+              </div>
             </BlurFade>
           </div>
         </div>
@@ -100,7 +103,7 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Hard Skills</h2>
+            <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
