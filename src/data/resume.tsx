@@ -190,19 +190,19 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "Linksbee",
+      title: "linksbio.me",
       dates: "Fevereiro 2025 - Agora",
       location: "Natal, Brasil.",
       description:
         "Criados de links personalizados do WhatsApp e páginas de Bio para o instagram focado em produto estilo SaaS.",
       image:
-        "linksbee.jpg",
+        "linksbio.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [
         {
           title: "Website",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://linksbee.com.br/",
+          href: "https://linksbio.me/",
         },
       ],
     }
