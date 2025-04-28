@@ -76,7 +76,7 @@ export const DATA = {
         "• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente, treinamento de usuários, entre outras atividades.",
     },
     {
-      company: "Umbler",
+      company: "Umbler | Umbler Internet ltda.",
       href: "https://umbler.com/br/",
       badges: [],
       location: "Home Office - Porto Alegre, Brasil",
@@ -194,7 +194,7 @@ export const DATA = {
       dates: "Fevereiro 2025 - Agora",
       location: "Natal, Brasil.",
       description:
-        "Criados de links personalizados do WhatsApp e páginas de Bio para o instagram focado em produto estilo SaaS.",
+        "Criador de links personalizados do WhatsApp e páginas de Bio para o instagram.Inspirado em outros sites com mesma ideia e com focos em ser produtos estilo SaaS com planos gratuitos.",
       image:
         "linksbio.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
