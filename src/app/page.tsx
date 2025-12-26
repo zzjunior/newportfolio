@@ -107,8 +107,11 @@ export default function Page() {
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={skill.name} className="flex items-center gap-1">
+                  {skill.icon}
+                  {skill.name}
+                </Badge>
               </BlurFade>
             ))}
           </div>
@@ -119,11 +122,11 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-3">
                   Meus Projetos
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Meus trabalhos, profissionais de estudo e hobbies pessoais.
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl">
+                  Trabalhos & Projetos
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   
@@ -161,13 +164,13 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   Hoobies e o que estou Estudando no momento
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl">
                   O que estou estudando
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Desde que comecei a programar, sempre tive interesse em
                   aprender novas tecnologias e linguagens de programação. Aqui estão
-                  estaram alguns hobbies que contribuo ou que estou estudando no momento.
+                  estaram alguns hobbies que contribuo e que estou estudando no momento.
                 </p>
               </div>
             </div>
@@ -200,11 +203,11 @@ export default function Page() {
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contate me
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl">
                 Onde me encontrar
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-               Fale comigo via e-mail ou rede sociail, estou sempre disponivel para encarar novos desafios ou projetos {" "}
+               Fale comigo via e-mail ou rede sociail, estou pronto para encarar novos desafios ou projetos {" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"

@@ -13,15 +13,62 @@ export const DATA = {
     "Um amante de tecnologia! Meu inicio de fato nesse universo veio em 2019, quando conquistei meu primeiro computador, desde então venho estudando e me aprimorando em várias areas desde de hardware à softwares. Atuante na area de TI desde de 2020, onde comecei a estudar programação, desde então venho me aprimorando e buscando sempre novos desafios e novos aprendizados. Hoje atuo no mercado tanto no meu trabalho atual na gestão operacional do TEIA CRM, como também como freelancer na TJ Agência criada por mim quando iniciei na área. Estou sempre estudando e tentando inovar meus conhecimentos, atualmente as áreas onde tenho mais interesse são desenvolvimento web, automação de processos com uso de inteligência artificial e programação, mas também me aventurando bastante na análise de dados.",
   avatarUrl: "/me.png",
   skills: [
-    "JavaScript",
-    "PHP",
-    "Node.js",
-    "Python",
-    "MySQL",
-    "C++",
-    "HTML",
-    "CSS",
-    "TailwindCSS",
+    {
+      name: "JavaScript",
+      icon: <Icons.javascript className="size-4" />,
+    },
+    {
+      name: "PHP",
+      icon: <Icons.php className="size-4" />,
+    },
+    {
+      name: "Node.js",
+      icon: <Icons.nodejs className="size-4" />,
+    },
+    {
+      name: "Python",
+      icon: <Icons.python className="size-4" />,
+    },
+    {
+      name: "MySQL",
+      icon: <Icons.mysql className="size-4" />,
+    },
+    {
+      name: "C++",
+      icon: <Icons.cpp className="size-4" />,
+    },
+    {
+      name: "HTML",
+      icon: <Icons.html className="size-4" />,
+    },
+    {
+      name: "CSS",
+      icon: <Icons.css className="size-4" />,
+    },
+    {
+      name: "TailwindCSS",
+      icon: <Icons.tailwindcss className="size-4" />,
+    },
+    {
+      name: "Docker",
+      icon: <Icons.docker className="size-4" />,
+    },
+    {      
+      name: "Git",
+      icon: <Icons.git className="size-4" />,
+    },
+    {
+      name: "Laravel",
+      icon: <Icons.laravel className="size-4" />,
+    },
+    //{
+      //name: "React",
+      //icon: <Icons.react className="size-4" />,
+    //},
+    {
+      name: "Flutter",
+      icon: <Icons.flutter className="size-4" />,
+    }
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -73,7 +120,7 @@ export const DATA = {
       start: "Março 2023",
       end: "Atual",
       description:
-        "• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente, treinamento de usuários, entre outras atividades.",
+        "• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente, treinamento de usuários, entre outras atividades.\n • Atuo diretamente na gestão operacional da equipe de suporte, auxiliando na resolução de problemas técnicos, implementação de melhorias e garantindo a satisfação dos clientes com o uso do Teia CRM.\n• Trabalho em colaboração com a equipe de desenvolvimento para identificar e solucionar bugs, além de contribuir para o aprimoramento contínuo do sistema.",
     },
     {
       company: "Umbler | Umbler Internet ltda.",
@@ -132,6 +179,126 @@ export const DATA = {
       video:
         "/teia-clip.mp4",
     },
+    // adicionando site do vendedor
+    {
+      title: "Site do Vendedor",
+      href: "https://vendedor.site/ovendedoronline",
+      dates: "Agosto 2025 - Presente",
+      active: true,
+      description:
+        "Auxilio no desenvolvimento como *Desenvolvedor Junior* e manutenção do Site do Vendedor online, plataforma de vendas para consórcios vinculada a Alcance Vendas.",
+      technologies: [
+        "Laravel",
+        "JavaScript",
+        "PHP",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://vendedor.site/ovendedoronline",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/site-vendedor.png",
+      video: "",
+    },
+    // adicionando linksbio.me
+    {
+      title: "linksbio.me",
+      href: "https://linksbio.me/",
+      dates: "Fevereiro 2025 - Agora",
+      active: true,
+      description:
+        "Criador de links personalizados do WhatsApp e páginas de Bio para o instagram.Inspirado em outros sites com mesma ideia e com focos em ser produtos estilo SaaS com planos gratuitos.",
+      technologies: [
+        "Slim Framework",
+        "JavaScript",
+        "PHP",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://linksbio.me/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/linksbio-me.png",
+      video: "",
+    },
+    {
+      title: "menu.linksbio.me",
+      href: "https://menu.linksbio.me/fortalecai",
+      dates: "Novembro 2025 - Agora",
+      active: true,
+      description:
+        "Cardápio digital para restaurantes, bares e lanchonetes, com foco em ser simples, rápido e gratuito para pequenos negócios. Planos personalizados para quem deseja mais funcionalidades.",
+      technologies: [
+        "Slim Framework",
+        "JavaScript",
+        "PHP",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://menu.linksbio.me/fortalecai",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/fortalecai-img.png",
+      video: "",
+    },
+    // mozaniel motos
+    {
+      title: "Landing Page - Mozaniel Motos",
+      href: "https://consorcio.mozanielmotos.com.br",
+      dates: "Fevereiro 2024 - Novembro 2024",
+      active: true,
+      description:
+        "Landing page para Mozaniel Motos, focada em consórcios, com design atraente e funcionalidade para captar clientes interessados em consórcios que ele oferece e direciona-los para um bot do whatsApp especializado.",
+      technologies: [
+        "Slim Framework",
+        "JavaScript",
+        "PHP",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://consorcio.mozanielmotos.com.br",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/mozanielmotos-img.png",
+      video: "",
+    },
+    // seu chale
+    {
+      title: "Landing Page - Seu Chalé",
+      href: "https://clickston.com.br/SeuChale",
+      dates: "Janeiro 2024 - Agora",
+      active: true,
+      description:
+        "Landing page para Seu Chalé, cliente realiza aluguel de imoveis próprios e precisava de uma landing page focada em oferecer uma experiência digital para clientes realizarem o agendamento da visita ao Chalé, mas sendo simples e rápida, com design atraente e funcionalidade para facilitar pedidos e reservas.",
+      technologies: [
+        "Slim Framework",
+        "JavaScript",
+        "PHP",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://clickston.com.br/SeuChale",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/clickston-seuchale.png",
+      video: "",
+    },
+    // Qrcode generator
     {
       title: "Qrcode Generator",
       href: "https://qrcode.clickston.com.br",
@@ -204,6 +371,28 @@ export const DATA = {
           icon: <Icons.globe className="h-4 w-4" />,
           href: "https://linksbio.me/",
         },
+      ],
+    },
+    {
+      title: "menu.linksbio.me",
+      dates: "Fevereiro 2025 - Agora",
+      location: "Natal, Brasil.",
+      description:
+        "Cardápio digital para lojas, e lanchonetes. Opensource e gratuito para pequenos negócios.",
+      image:
+        "fortalecai-img.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://menu.linksbio.me/fortalecai",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/zzjunior/menu.linksbio.me"
+        }
       ],
     }
   ],
