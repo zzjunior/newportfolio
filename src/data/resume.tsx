@@ -68,7 +68,7 @@ export const DATA = {
     {
       name: "Flutter",
       icon: <Icons.flutter className="size-4" />,
-    }
+    },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
