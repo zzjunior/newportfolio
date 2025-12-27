@@ -162,15 +162,14 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hoobies e o que estou Estudando no momento
+                  No momento
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl">
                   O que estou estudando
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Desde que comecei a programar, sempre tive interesse em
-                  aprender novas tecnologias e linguagens de programação. Aqui estão
-                  estaram alguns hobbies que contribuo e que estou estudando no momento.
+                  aprender novas em qualquer coisa que faço. Geralmente tento resolver problemas cotidianos com projetos simples.
                 </p>
               </div>
             </div>
@@ -207,7 +206,7 @@ export default function Page() {
                 Onde me encontrar
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-               Fale comigo via e-mail ou rede sociail, estou pronto para encarar novos desafios ou projetos {" "}
+               Fale comigo via rede sociail, estou pronto para encarar novos desafios ou projetos {" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
