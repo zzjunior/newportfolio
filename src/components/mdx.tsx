@@ -45,17 +45,16 @@ function CustomLink(props: any) {
 function RoundedImage(props: any) {
   return <Image alt={props.alt} className="rounded-lg" {...props} />;
 }
-
-// This replaces rehype-slug
+// Isso substitui o rehype-slug
 function slugify(str: string) {
   return str
     .toString()
     .toLowerCase()
-    .trim() // Remove whitespace from both ends of a string
-    .replace(/\s+/g, "-") // Replace spaces with -
-    .replace(/&/g, "-and-") // Replace & with 'and'
-    .replace(/[^\w\-]+/g, "") // Remove all non-word characters except for -
-    .replace(/\-\-+/g, "-"); // Replace multiple - with single -
+    .trim() // Remove espaços em branco do início e do fim da string
+    .replace(/\s+/g, "-") // Substitui espaços por -
+    .replace(/&/g, "-and-") // Substitui & por 'and'
+    .replace(/[^\w\-]+/g, "") // Remove todos os caracteres não alfanuméricos, exceto por -
+    .replace(/\-\-+/g, "-"); // Substitui múltiplos - por um único -
 }
 
 function createHeading(level: number) {

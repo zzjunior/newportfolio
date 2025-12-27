@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import Particles from "@/components/magicui/particles";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -63,6 +64,13 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
+            <Particles
+              className="fixed inset-0 -z-10"
+              quantity={100}
+              ease={80}
+              staticity={50}
+              refresh={false}
+            />
             {children}
             <Navbar />
           </TooltipProvider>

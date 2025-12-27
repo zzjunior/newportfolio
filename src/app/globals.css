@@ -146,13 +146,13 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 .card {
   @apply bg-card text-card-foreground;
   transition: transform 0.3s, box-shadow 0.3s, width 0.3s, height 0.3s;
-  width: 300px; /* Ajuste o valor conforme necessário */
-  height: 200px; /* Ajuste o valor conforme necessário */
+  width: 300px; 
+  height: 200px; 
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 320px; /* Ajuste o valor conforme necessário */
-  height: 220px; /* Ajuste o valor conforme necessário */
+  width: 320px; 
+  height: 220px;
 }

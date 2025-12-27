@@ -1,4 +1,4 @@
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons"; // importa icons
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
@@ -11,7 +11,7 @@ export const DATA = {
     "Desenvolvedor Web, Entusiasta de Tecnologia e Estudante de ADS e C&T.",
   summary:
     "Um amante de tecnologia! Meu inicio de fato nesse universo veio em 2019, quando conquistei meu primeiro computador, desde então venho estudando e me aprimorando em várias areas desde de hardware à softwares. Atuante na area de TI desde de 2020, onde comecei a estudar programação, desde então venho me aprimorando e buscando sempre novos desafios e novos aprendizados. Hoje atuo no mercado tanto no meu trabalho atual na gestão operacional do TEIA CRM, como também como freelancer na TJ Agência criada por mim quando iniciei na área. Estou sempre estudando e tentando inovar meus conhecimentos, atualmente as áreas onde tenho mais interesse são desenvolvimento web, automação de processos com uso de inteligência artificial e programação, mas também me aventurando bastante na análise de dados.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpeg",
   skills: [
     {
       name: "JavaScript",
@@ -245,7 +245,13 @@ export const DATA = {
           type: "Website",
           href: "https://menu.linksbio.me/fortalecai",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/zzjunior/menu.linksbio.me",
+          icon: <Icons.github className="size-3" />,
         }
+
       ],
       image: "/fortalecai-img.png",
       video: "",
@@ -364,7 +370,6 @@ export const DATA = {
         "Criador de links personalizados do WhatsApp e páginas de Bio para o instagram.Inspirado em outros sites com mesma ideia e com focos em ser produtos estilo SaaS com planos gratuitos.",
       image:
         "linksbio.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [
         {
           title: "Website",
@@ -375,13 +380,12 @@ export const DATA = {
     },
     {
       title: "menu.linksbio.me",
-      dates: "Fevereiro 2025 - Agora",
+      dates: "Outubro 2025 - Agora",
       location: "Natal, Brasil.",
       description:
         "Cardápio digital para lojas, e lanchonetes. Opensource e gratuito para pequenos negócios.",
       image:
         "fortalecai-img.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [
         {
           title: "Website",
@@ -394,6 +398,27 @@ export const DATA = {
           href: "https://github.com/zzjunior/menu.linksbio.me"
         }
       ],
+    },
+    {
+      title: "WhatsApp Checker API",
+      icon: <Icons.whatsapp className="size-4" />,
+      dates: "Julho 2024 - Agosto 2024",
+      location: "Natal, Brasil.",
+      description: "API desenvolvida para checagem de existencia de números no WhatsApp de forma rápida, sem riscos de bloqueios de números na checagem.",
+      image: "whatsapp-checker-img.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/zzjunior/whatsapp-checker-api"
+        },
+        {
+          title: "API Documentation",
+          icon: <Icons.postman className="h-4 w-4" />,
+          href: "https://documenter.getpostman.com/view/46605612/2sBXVbFsXL"
+        }
+      ]
     }
+
   ],
 } as const;
