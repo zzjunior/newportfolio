@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 
 interface ParticlesProps {
@@ -14,11 +14,6 @@ export default function Particles({
 }: ParticlesProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -105,7 +100,7 @@ export default function Particles({
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", handleResize);
     };
-  }, [quantity, theme, mounted]);
+  }, [quantity, theme]);
 
   return (
     <div className={className}>
