@@ -3,7 +3,7 @@ import { Icons } from "@/components/icons";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { buttonVariants } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
-import { cn, whatsappLink } from "@/lib/utils";
+import { whatsappLink } from "@/lib/utils";
 
 export default function ContactSection() {
   return (
@@ -37,7 +37,7 @@ export default function ContactSection() {
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className={cn(buttonVariants(), "bg-violet-600 text-white hover:bg-violet-700")}
+            className={buttonVariants({ variant: "outline" })}
           >
             <Icons.whatsapp className="size-4" />
             WhatsApp

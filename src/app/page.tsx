@@ -10,7 +10,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { ArrowUpRight } from "lucide-react";
-import { cn, formatPeriod, whatsappLink } from "@/lib/utils";
+import { formatPeriod, whatsappLink } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 
@@ -46,7 +46,7 @@ export default function Page() {
                     href={whatsappLink()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={cn(buttonVariants(), "bg-violet-600 text-white hover:bg-violet-700")}
+                    className={buttonVariants({ variant: "outline" })}
                   >
                     <Icons.whatsapp className="size-4" />
                     Vamos conversar
