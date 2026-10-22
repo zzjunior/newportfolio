@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import ContactSection from "@/components/section/contact-section";
 import ProjectsSection from "@/components/section/projects-section";
 import ServicesSection from "@/components/section/services-section";
 import WorkSection from "@/components/section/work-section";
@@ -166,28 +167,9 @@ export default function Page() {
         </div>
       </section>
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contate me
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl">
-                Onde me encontrar
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-               Fale comigo via rede sociail, estou pronto para encarar novos desafios ou projetos {" "}
-                <Link
-                  href={DATA.contact.social.LinkedIn.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  Meu Linkedin.
-                </Link>{" "}
-                Também estou disponivel via Email.
-              </p>
-            </div>
-          </BlurFade>
-        </div>
+        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <ContactSection />
+        </BlurFade>
       </section>
     </main>
   );
