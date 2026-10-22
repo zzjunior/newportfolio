@@ -9,9 +9,9 @@ export default function HackathonsSection() {
   return (
     <div className="flex min-h-0 flex-col gap-y-8 w-full overflow-hidden">
       <SectionHeader
-        badge="No momento"
-        title="Projetos em que estou participando"
-        description="Gosto de resolver problemas do dia a dia com projetos simples. Estes são os que estou tocando agora."
+        badge="Projetos paralelos"
+        title="Gosto de construir coisas"
+        description={`Fora do trabalho, sempre tenho ${DATA.hackathons.length}+ projetos próprios em andamento. Pego problemas do dia a dia e transformo em produtos simples, rápidos e úteis, principalmente para pequenos negócios. É onde testo ideias, aprendo coisas novas e coloco a mão na massa.`}
       />
       <Timeline>
         {DATA.hackathons.map((project) => (
