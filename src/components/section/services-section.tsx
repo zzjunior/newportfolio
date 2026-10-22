@@ -15,7 +15,7 @@ export default function ServicesSection() {
         title="Como posso ajudar seu negócio"
         description="Pela TJ Agência, desenvolvo soluções sob medida para tirar a sua ideia do papel."
       />
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {DATA.services.map((service, id) => (
           <BlurFade key={service.title} delay={BLUR_FADE_DELAY * 12 + id * 0.05} className="h-full">
             <div className="flex h-full flex-col gap-3 rounded-xl border border-border p-5 transition-colors duration-200 hover:border-violet-500/60">

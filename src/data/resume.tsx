@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons"; // importa icons
 import { WHATSAPP_NUMBER, whatsappLink } from "@/lib/utils";
-import { AppWindow, Bot, HomeIcon, LayoutTemplate } from "lucide-react";
+import { AppWindow, Bot, HomeIcon, LayoutTemplate, Smartphone } from "lucide-react";
 import { Cpp } from "@/components/ui/svgs/cpp";
 import { Css } from "@/components/ui/svgs/css";
 import { Docker } from "@/components/ui/svgs/docker";
@@ -24,7 +24,7 @@ export const DATA = {
   description:
     "Desenvolvedor Web na Teia CRM e freelancer pela TJ Agência. Sites, sistemas e automações com IA.",
   summary:
-    "Sou apaixonado por tecnologia desde 2019, quando conquistei meu primeiro computador. Desde então estudo de hardware a software e, em 2020, comecei a programar. Hoje atuo como **Desenvolvedor Web na Teia CRM** e atendo clientes como freelancer pela **TJ Agência**.\n\nMeu foco é desenvolvimento web, automação de processos com inteligência artificial e análise de dados. Gosto de resolver problemas reais com soluções simples, rápidas e bem feitas.",
+    "Sou apaixonado por tecnologia desde 2019, quando conquistei meu primeiro computador. Desde então estudo de hardware a software e, em 2020, comecei a programar. Hoje atuo como **Desenvolvedor Web na Teia CRM** e atendo clientes como freelancer pela **TJ Agência**.\n\nMeu foco é desenvolvimento web, apps mobile e automação de processos com inteligência artificial. Gosto de resolver problemas reais com soluções simples, rápidas e bem feitas.",
   avatarUrl: "/me.jpeg",
   skills: [
     { name: "JavaScript", icon: Javascript },
@@ -96,6 +96,12 @@ export const DATA = {
       description: "Plataformas sob medida para o seu processo.",
       icon: AppWindow,
       message: "Olá Júnior, quero um orçamento de Sistemas Web & SaaS.",
+    },
+    {
+      title: "Apps Mobile",
+      description: "Aplicativos para Android e iOS integrados ao seu negócio.",
+      icon: Smartphone,
+      message: "Olá Júnior, quero um orçamento de Apps Mobile.",
     },
     {
       title: "Automações com IA",
