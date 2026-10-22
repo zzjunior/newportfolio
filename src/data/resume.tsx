@@ -184,6 +184,21 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "Site do Vendedor",
+      dates: "Agosto 2025 - Atual",
+      location: "Teia CRM · Grupo Alcance Vendas",
+      description:
+        "Plataforma de vendas de consórcios do grupo Alcance Vendas. Atuo como um dos desenvolvedores do time na Teia CRM, no desenvolvimento de novas funcionalidades e na manutenção da plataforma.",
+      image: "/site-vendedor.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://vendedor.site/ovendedoronline",
+        },
+      ],
+    },
+    {
       title: "linksbio.me",
       dates: "Fevereiro 2025 - Atual",
       location: "Natal, Brasil.",
@@ -282,24 +297,6 @@ export const DATA = {
         },
       ],
       image: "/linksbio-me.png",
-      video: "",
-    },
-    {
-      title: "Site do Vendedor",
-      href: "https://vendedor.site/ovendedoronline",
-      dates: "Agosto 2025 - Atual",
-      active: true,
-      description:
-        "Desenvolvimento e manutenção do Site do Vendedor, plataforma de vendas de consórcios vinculada à Alcance Vendas.",
-      technologies: ["Laravel", "JavaScript", "PHP", "Docker"],
-      links: [
-        {
-          type: "Website",
-          href: "https://vendedor.site/ovendedoronline",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/site-vendedor.png",
       video: "",
     },
     {
