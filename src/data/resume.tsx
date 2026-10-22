@@ -1,82 +1,50 @@
 import { Icons } from "@/components/icons"; // importa icons
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { WHATSAPP_NUMBER, whatsappLink } from "@/lib/utils";
+import { AppWindow, Bot, HomeIcon, LayoutTemplate, Smartphone } from "lucide-react";
+import { Cpp } from "@/components/ui/svgs/cpp";
+import { Css } from "@/components/ui/svgs/css";
+import { Docker } from "@/components/ui/svgs/docker";
+import { Flutter } from "@/components/ui/svgs/flutter";
+import { Git } from "@/components/ui/svgs/git";
+import { Html } from "@/components/ui/svgs/html";
+import { Javascript } from "@/components/ui/svgs/javascript";
+import { Laravel } from "@/components/ui/svgs/laravel";
+import { Mysql } from "@/components/ui/svgs/mysql";
+import { Nodejs } from "@/components/ui/svgs/nodejs";
+import { Php } from "@/components/ui/svgs/php";
+import { Python } from "@/components/ui/svgs/python";
+import { Tailwindcss } from "@/components/ui/svgs/tailwindcss";
 
 export const DATA = {
   name: "Júnior Santos",
   initials: "JS",
-  url: "https://zzjunior.github.io",
+  url: "https://junior.linksbio.me",
   location: "Natal RN - Brazil",
   locationLink: "https://www.google.com/maps/place/Natal,+RN",
   description:
-    "Desenvolvedor Web, Entusiasta de Tecnologia e Estudante de ADS e C&T.",
+    "Desenvolvedor Web na Teia CRM e freelancer pela TJ Agência. Sites, sistemas e automações com IA.",
   summary:
-    "Um amante de tecnologia! Meu inicio de fato nesse universo veio em 2019, quando conquistei meu primeiro computador, desde então venho estudando e me aprimorando em várias areas desde de hardware à softwares. Atuante na area de TI desde de 2020, onde comecei a estudar programação, desde então venho me aprimorando e buscando sempre novos desafios e novos aprendizados. Hoje atuo no mercado tanto no meu trabalho atual na gestão operacional do TEIA CRM, como também como freelancer na TJ Agência criada por mim quando iniciei na área. Estou sempre estudando e tentando inovar meus conhecimentos, atualmente as áreas onde tenho mais interesse são desenvolvimento web, automação de processos com uso de inteligência artificial e programação, mas também me aventurando bastante na análise de dados.",
+    "Sou apaixonado por tecnologia desde 2019, quando conquistei meu primeiro computador. Desde então estudo de hardware a software e, em 2020, comecei a programar. Hoje atuo como **Desenvolvedor Web na Teia CRM** e atendo clientes como freelancer pela **TJ Agência**.\n\nMeu foco é desenvolvimento web, apps mobile e automação de processos com inteligência artificial. Gosto de resolver problemas reais com soluções simples, rápidas e bem feitas.",
   avatarUrl: "/me.jpeg",
   skills: [
-    {
-      name: "JavaScript",
-      icon: <Icons.javascript className="size-4" />,
-    },
-    {
-      name: "PHP",
-      icon: <Icons.php className="size-4" />,
-    },
-    {
-      name: "Node.js",
-      icon: <Icons.nodejs className="size-4" />,
-    },
-    {
-      name: "Python",
-      icon: <Icons.python className="size-4" />,
-    },
-    {
-      name: "MySQL",
-      icon: <Icons.mysql className="size-4" />,
-    },
-    {
-      name: "C++",
-      icon: <Icons.cpp className="size-4" />,
-    },
-    {
-      name: "HTML",
-      icon: <Icons.html className="size-4" />,
-    },
-    {
-      name: "CSS",
-      icon: <Icons.css className="size-4" />,
-    },
-    {
-      name: "TailwindCSS",
-      icon: <Icons.tailwindcss className="size-4" />,
-    },
-    {
-      name: "Docker",
-      icon: <Icons.docker className="size-4" />,
-    },
-    {      
-      name: "Git",
-      icon: <Icons.git className="size-4" />,
-    },
-    {
-      name: "Laravel",
-      icon: <Icons.laravel className="size-4" />,
-    },
-    //{
-      //name: "React",
-      //icon: <Icons.react className="size-4" />,
-    //},
-    {
-      name: "Flutter",
-      icon: <Icons.flutter className="size-4" />,
-    },
+    { name: "JavaScript", icon: Javascript },
+    { name: "PHP", icon: Php },
+    { name: "Node.js", icon: Nodejs },
+    { name: "Python", icon: Python },
+    { name: "MySQL", icon: Mysql },
+    { name: "C++", icon: Cpp },
+    { name: "HTML", icon: Html },
+    { name: "CSS", icon: Css },
+    { name: "TailwindCSS", icon: Tailwindcss },
+    { name: "Docker", icon: Docker },
+    { name: "Git", icon: Git },
+    { name: "Laravel", icon: Laravel },
+    { name: "Flutter", icon: Flutter },
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "junior@agenciatj.com.br",
-    tel: "+5584997015436",
+    whatsapp: WHATSAPP_NUMBER,
     social: {
       GitHub: {
         name: "GitHub",
@@ -92,6 +60,13 @@ export const DATA = {
 
         navbar: true,
       },
+      WhatsApp: {
+        name: "WhatsApp",
+        url: whatsappLink(),
+        icon: Icons.whatsapp,
+
+        navbar: true,
+      },
       X: {
         name: "X",
         url: "https://x.com/_zzjunior",
@@ -100,7 +75,7 @@ export const DATA = {
         navbar: false,
       },
       email: {
-        name: "Send Email",
+        name: "Email",
         url: "mailto:junior@agenciatj.com.br",
         icon: Icons.email,
 
@@ -109,30 +84,94 @@ export const DATA = {
     },
   },
 
-  work: [
+  services: [
     {
-      company: "Teia CRM | JCW Desenvolvimento de Tecnologias LTDA.",
-      href: "https://teiacrm.com.br",
-      badges: [],
-      location: "Presencial - Natal Brazil",
-      title: "Suporte Técnico Operacional",
-      logoUrl: "/teia.webp",
-      start: "Março 2023",
-      end: "Atual",
-      description:
-        "• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente, treinamento de usuários, entre outras atividades.\n • Atuo diretamente na gestão operacional da equipe de suporte, auxiliando na resolução de problemas técnicos, implementação de melhorias e garantindo a satisfação dos clientes com o uso do Teia CRM.\n• Trabalho em colaboração com a equipe de desenvolvimento para identificar e solucionar bugs, além de contribuir para o aprimoramento contínuo do sistema.",
+      title: "Landing Pages",
+      description: "Páginas rápidas e focadas em conversão.",
+      icon: LayoutTemplate,
+      message: "Olá Júnior, quero um orçamento de Landing Pages.",
     },
     {
-      company: "Umbler | Umbler Internet ltda.",
+      title: "Sistemas Web & SaaS",
+      description: "Plataformas sob medida para o seu processo.",
+      icon: AppWindow,
+      message: "Olá Júnior, quero um orçamento de Sistemas Web & SaaS.",
+    },
+    {
+      title: "Apps Mobile",
+      description: "Aplicativos para Android e iOS integrados ao seu negócio.",
+      icon: Smartphone,
+      message: "Olá Júnior, quero um orçamento de Apps Mobile.",
+    },
+    {
+      title: "Automações com IA",
+      description: "Integrações e processos automatizados.",
+      icon: Bot,
+      message: "Olá Júnior, quero um orçamento de Automações com IA.",
+    },
+  ],
+
+  work: [
+    {
+      company: "Teia CRM",
+      href: "https://teiacrm.com.br",
+      location: "Presencial - Natal, Brasil",
+      logoUrl: "/teia.webp",
+      group: {
+        name: "Alcance",
+        logoUrl: "/alcance-symbol.png",
+      },
+      start: "2023",
+      end: "Atual",
+      roles: [
+        {
+          title: "Desenvolvedor Web",
+          start: "2026",
+          end: "Atual",
+          description: "",
+        },
+        {
+          title: "Suporte Técnico Operacional",
+          start: "2023",
+          end: "2026",
+          description:
+            "• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente e treinamento de usuários.\n• Atuação na gestão operacional da equipe de suporte, auxiliando na resolução de problemas técnicos, na implementação de melhorias e garantindo a satisfação dos clientes com o Teia CRM.\n• Colaboração com a equipe de desenvolvimento para identificar e solucionar bugs, contribuindo para o aprimoramento contínuo do sistema.",
+        },
+      ],
+    },
+    {
+      company: "TJ Agência",
+      href: "",
+      location: "Remoto - Natal, Brasil",
+      logoUrl: "/TJ.png",
+      start: "2022",
+      end: "Atual",
+      roles: [
+        {
+          title: "Desenvolvedor Web Freelancer",
+          start: "2022",
+          end: "Atual",
+          description:
+            "Atuação como freelancer pela minha agência, com desenvolvimento web desde 2023: landing pages, sistemas sob medida e produtos SaaS próprios (linksbio.me, menu.linksbio.me).",
+        },
+      ],
+    },
+    {
+      company: "Umbler",
       href: "https://umbler.com/br/",
-      badges: [],
       location: "Home Office - Porto Alegre, Brasil",
-      title: "Costomer Success Host Analyst",
       logoUrl: "/umbler.png",
-      start: "Março 2022",
-      end: "Dezembro 2022",
-      description:
-        "• Auxiliar no atendimento aos clientes via chat, online e e-mails, auxílio nos projetos. Suporte aos clientes com dificuldades em websites (Wordpress, HTML, CSS, JavaScript e PHP), FTP, banco de dados Mysql / SQLServer, configuração de DNS, registro de domínios e servidores SMTP, POP e IMAP.",
+      start: "2022",
+      end: "2022",
+      roles: [
+        {
+          title: "Customer Success Host Analyst",
+          start: "2022",
+          end: "2022",
+          description:
+            "• Atendimento aos clientes via chat e e-mail e auxílio em projetos. Suporte a clientes com dificuldades em websites (WordPress, HTML, CSS, JavaScript e PHP), FTP, bancos de dados MySQL / SQL Server, configuração de DNS, registro de domínios e servidores SMTP, POP e IMAP.",
+        },
+      ],
     },
   ],
   education: [
@@ -142,234 +181,42 @@ export const DATA = {
       degree: "Bacharelado em Ciências e Tecnologia",
       logoUrl: "/ufrn.png",
       start: "2021",
-      end: "2027 - Previsão",
+      end: "2024",
+      status: "Não concluído · 6º período",
     },
     {
       school: "Estácio de Sá",
       href: "https://www.estacio.br",
-      degree: "Analise e Desenvolvimento de Sistemas",
+      degree: "Análise e Desenvolvimento de Sistemas",
       logoUrl: "/logo-estacio.webp",
       start: "2024",
-      end: "2026 - Previsão",
-    }
-  ],
-  projects: [
-    {
-      title: "Site - Teia CRM",
-      href: "https://teiacrm.com.br",
-      dates: "Novembro 2024 - Presente",
-      active: true,
-      description:
-        "Site do produto Saas Teia CRM, desenvolvido com o objetivo de apresentar o sistema e modelo de negócio da empresa e serviços, sendo o primeiro CRM voltado 100% para consórcio.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP",
-        "Docker",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://teiacrm.com.br",
-          icon: <Icons.globe className="size-3" />,
-        }
-      ],
-      image: "",
-      video:
-        "/teia-clip.mp4",
+      end: "2027 (previsão)",
     },
-    // adicionando site do vendedor
-    {
-      title: "Site do Vendedor",
-      href: "https://vendedor.site/ovendedoronline",
-      dates: "Agosto 2025 - Presente",
-      active: true,
-      description:
-        "Auxilio no desenvolvimento como *Desenvolvedor Junior* e manutenção do Site do Vendedor online, plataforma de vendas para consórcios vinculada a Alcance Vendas.",
-      technologies: [
-        "Laravel",
-        "JavaScript",
-        "PHP",
-        "Docker",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://vendedor.site/ovendedoronline",
-          icon: <Icons.globe className="size-3" />,
-        }
-      ],
-      image: "/site-vendedor.png",
-      video: "",
-    },
-    // adicionando linksbio.me
-    {
-      title: "linksbio.me",
-      href: "https://linksbio.me/",
-      dates: "Fevereiro 2025 - Agora",
-      active: true,
-      description:
-        "Criador de links personalizados do WhatsApp e páginas de Bio para o instagram.Inspirado em outros sites com mesma ideia e com focos em ser produtos estilo SaaS com planos gratuitos.",
-      technologies: [
-        "Slim Framework",
-        "JavaScript",
-        "PHP",
-        "Docker",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://linksbio.me/",
-          icon: <Icons.globe className="size-3" />,
-        }
-      ],
-      image: "/linksbio-me.png",
-      video: "",
-    },
-    {
-      title: "menu.linksbio.me",
-      href: "https://menu.linksbio.me/fortalecai",
-      dates: "Novembro 2025 - Agora",
-      active: true,
-      description:
-        "Cardápio digital para restaurantes, bares e lanchonetes, com foco em ser simples, rápido e gratuito para pequenos negócios. Planos personalizados para quem deseja mais funcionalidades.",
-      technologies: [
-        "Slim Framework",
-        "JavaScript",
-        "PHP",
-        "Docker",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://menu.linksbio.me/fortalecai",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/zzjunior/menu.linksbio.me",
-          icon: <Icons.github className="size-3" />,
-        }
-
-      ],
-      image: "/fortalecai-img.png",
-      video: "",
-    },
-    // mozaniel motos
-    {
-      title: "Landing Page - Mozaniel Motos",
-      href: "https://consorcio.mozanielmotos.com.br",
-      dates: "Fevereiro 2024 - Novembro 2024",
-      active: true,
-      description:
-        "Landing page para Mozaniel Motos, focada em consórcios, com design atraente e funcionalidade para captar clientes interessados em consórcios que ele oferece e direciona-los para um bot do whatsApp especializado.",
-      technologies: [
-        "Slim Framework",
-        "JavaScript",
-        "PHP",
-        "Docker",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://consorcio.mozanielmotos.com.br",
-          icon: <Icons.globe className="size-3" />,
-        }
-      ],
-      image: "/mozanielmotos-img.png",
-      video: "",
-    },
-    // seu chale
-    {
-      title: "Landing Page - Seu Chalé",
-      href: "https://clickston.com.br/SeuChale",
-      dates: "Janeiro 2024 - Agora",
-      active: true,
-      description:
-        "Landing page para Seu Chalé, cliente realiza aluguel de imoveis próprios e precisava de uma landing page focada em oferecer uma experiência digital para clientes realizarem o agendamento da visita ao Chalé, mas sendo simples e rápida, com design atraente e funcionalidade para facilitar pedidos e reservas.",
-      technologies: [
-        "Slim Framework",
-        "JavaScript",
-        "PHP",
-        "Docker",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://clickston.com.br/SeuChale",
-          icon: <Icons.globe className="size-3" />,
-        }
-      ],
-      image: "/clickston-seuchale.png",
-      video: "",
-    },
-    // Qrcode generator
-    {
-      title: "Qrcode Generator",
-      href: "https://qrcode.clickston.com.br",
-      dates: "Janeiro 2024 - Feveiro 2024",
-      active: true,
-      description:
-        "Gerador de QrCodes para links, baseado na qrcode.js, com a possibilidade de salvar o qrcode gerado em formato png.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://qrcode.clickston.com.br",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/zzjunior/QRcodeFree",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "/qrcode-clip.mp4",
-    },
-    {
-      title: "image.convert",
-      href: "https://conversor.clickston.com.br",
-      dates: "Junho 2024 - Presente",
-      active: true,
-      description:
-        "Conversor de imagens, atualmente converte imagens para vários formatos e disponibiliza o dowload imediato.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://conversor.clickston.com.br",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/zzjunior/image.convert",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/image-convert-clip.mp4",
-    }
   ],
   hackathons: [
     {
+      title: "Site do Vendedor",
+      dates: "Agosto 2025 - Atual",
+      location: "Grupo Alcance Vendas",
+      description:
+        "Plataforma de catálogo e ferramentas para vendedores Honda, com aplicativo mobile e agentes de IA. Atuo como um dos desenvolvedores do time do Grupo Alcance, no desenvolvimento de novas funcionalidades e na manutenção da plataforma.",
+      image: "/site-vendedor.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://vendedor.site/ovendedoronline",
+        },
+      ],
+    },
+    {
       title: "linksbio.me",
-      dates: "Fevereiro 2025 - Agora",
+      dates: "Fevereiro 2025 - Atual",
       location: "Natal, Brasil.",
       description:
-        "Criador de links personalizados do WhatsApp e páginas de Bio para o instagram.Inspirado em outros sites com mesma ideia e com focos em ser produtos estilo SaaS com planos gratuitos.",
+        "Criador de links personalizados do WhatsApp, páginas de bio para o Instagram, encurtador de links e gerador de QR Code. Inspirado em outros sites com a mesma ideia, com foco em ser um produto estilo SaaS com planos gratuitos.",
       image:
-        "linksbio.png",
+        "/linksbio.png",
       links: [
         {
           title: "Website",
@@ -380,12 +227,12 @@ export const DATA = {
     },
     {
       title: "menu.linksbio.me",
-      dates: "Outubro 2025 - Agora",
+      dates: "Outubro 2025 - Atual",
       location: "Natal, Brasil.",
       description:
-        "Cardápio digital para lojas, e lanchonetes. Opensource e gratuito para pequenos negócios.",
+        "Cardápio digital para lojas e lanchonetes. Open source e gratuito para pequenos negócios.",
       image:
-        "fortalecai-img.png",
+        "/fortalecai-img.png",
       links: [
         {
           title: "Website",
@@ -401,11 +248,10 @@ export const DATA = {
     },
     {
       title: "WhatsApp Checker API",
-      icon: <Icons.whatsapp className="size-4" />,
       dates: "Julho 2024 - Agosto 2024",
       location: "Natal, Brasil.",
-      description: "API desenvolvida para checagem de existencia de números no WhatsApp de forma rápida, sem riscos de bloqueios de números na checagem.",
-      image: "whatsapp-checker-img.png",
+      description: "API desenvolvida para checagem de existência de números no WhatsApp de forma rápida, sem riscos de bloqueios de números na checagem.",
+      image: "/whatsapp-checker-img.png",
       links: [
         {
           title: "Source",
@@ -420,5 +266,136 @@ export const DATA = {
       ]
     }
 
+  ],
+
+  projects: [
+    {
+      title: "menu.linksbio.me",
+      href: "https://menu.linksbio.me/fortalecai",
+      dates: "Novembro 2025 - Atual",
+      active: true,
+      description:
+        "Cardápio digital para restaurantes, bares e lanchonetes, com foco em ser simples, rápido e gratuito para pequenos negócios. Planos personalizados para quem deseja mais funcionalidades.",
+      technologies: ["Slim Framework", "JavaScript", "PHP", "Docker"],
+      links: [
+        {
+          type: "Website",
+          href: "https://menu.linksbio.me/fortalecai",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/zzjunior/menu.linksbio.me",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/fortalecai-img.png",
+      video: "",
+    },
+    {
+      title: "linksbio.me",
+      href: "https://linksbio.me/",
+      dates: "Fevereiro 2025 - Atual",
+      active: true,
+      description:
+        "Criador de links personalizados do WhatsApp, páginas de bio para o Instagram, encurtador de links e gerador de QR Code. Um produto no estilo SaaS, com plano gratuito.",
+      technologies: ["Slim Framework", "JavaScript", "PHP", "Docker"],
+      links: [
+        {
+          type: "Website",
+          href: "https://linksbio.me/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/linksbio-me.png",
+      video: "",
+    },
+    {
+      title: "WhatsApp Checker API",
+      href: "https://github.com/zzjunior/whatsapp-checker-api",
+      dates: "Julho 2024 - Agosto 2024",
+      active: true,
+      description:
+        "API para checar a existência de números no WhatsApp de forma rápida, sem risco de bloqueio dos números usados na checagem.",
+      technologies: ["Node.js", "JavaScript", "Docker"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/zzjunior/whatsapp-checker-api",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "API Docs",
+          href: "https://documenter.getpostman.com/view/46605612/2sBXVbFsXL",
+          icon: <Icons.postman className="size-3" />,
+        },
+      ],
+      image: "/whatsapp-checker-img.png",
+      video: "",
+    },
+    {
+      title: "image.convert",
+      href: "https://conversor.clickston.com.br",
+      dates: "Junho 2024",
+      active: true,
+      description:
+        "Conversor de imagens para vários formatos, com download imediato.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://conversor.clickston.com.br",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/zzjunior/image.convert",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/image-convert-clip.mp4",
+    },
+    {
+      title: "Qrcode Generator",
+      href: "https://qrcode.clickston.com.br",
+      dates: "Janeiro 2024 - Fevereiro 2024",
+      active: true,
+      description:
+        "Gerador de QR Codes para links, baseado na qrcode.js, com opção de salvar o QR Code em PNG.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://qrcode.clickston.com.br",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/zzjunior/QRcodeFree",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/qrcode-clip.mp4",
+    },
+    {
+      title: "Site - Teia CRM",
+      href: "https://teiacrm.com.br",
+      dates: "Novembro 2024",
+      active: true,
+      description:
+        "Site do produto SaaS Teia CRM, desenvolvido para apresentar o sistema, o modelo de negócio e os serviços da empresa. É o primeiro CRM voltado 100% para consórcio.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "Docker"],
+      links: [
+        {
+          type: "Website",
+          href: "https://teiacrm.com.br",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/teia-clip.mp4",
+    },
   ],
 } as const;

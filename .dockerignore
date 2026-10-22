@@ -3,3 +3,7 @@ node_modules
 .git
 .env.local
 npm-debug.log*
+.pnpm-store
+.content-collections
+.superpowers
+docs

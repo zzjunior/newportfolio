@@ -4,6 +4,8 @@ WORKDIR /app
 
 RUN corepack enable
 
+ENV npm_config_store_dir=/pnpm-store
+
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
@@ -11,4 +13,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["pnpm", "dev", "-H", "0.0.0.0"]
+CMD ["pnpm", "dev", "--webpack", "-H", "0.0.0.0"]

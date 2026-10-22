@@ -34,3 +34,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# content-collections
+.content-collections
+
+# pnpm store (criado pelo container)
+.pnpm-store
+
+# planejamento local (superpowers)
+.superpowers/
+docs/superpowers/
