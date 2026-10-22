@@ -190,9 +190,9 @@ export const DATA = {
     {
       title: "Site do Vendedor",
       dates: "Agosto 2025 - Atual",
-      location: "Teia CRM · Grupo Alcance Vendas",
+      location: "Grupo Alcance Vendas",
       description:
-        "Plataforma de catálogo e ferramentas para vendedores Honda, com aplicativo mobile e agentes de IA. Atuo como um dos desenvolvedores do time na Teia CRM, no desenvolvimento de novas funcionalidades e na manutenção da plataforma.",
+        "Plataforma de catálogo e ferramentas para vendedores Honda, com aplicativo mobile e agentes de IA. Atuo como um dos desenvolvedores do time do Grupo Alcance, no desenvolvimento de novas funcionalidades e na manutenção da plataforma.",
       image: "/site-vendedor.png",
       links: [
         {
