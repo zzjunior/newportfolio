@@ -11,9 +11,11 @@ services:
       - next:/app/.next
       - pnpm-store:/pnpm-store
       - content_collections:/app/.content-collections
+    command: sh -c "pnpm install --frozen-lockfile && pnpm dev --webpack -H 0.0.0.0"
     environment:
       - WATCHPACK_POLLING=true
       - NEXT_TELEMETRY_DISABLED=1
+      - CI=true
     env_file:
       - path: .env.local
         required: false
