@@ -303,42 +303,6 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Landing Page - Mozaniel Motos",
-      href: "https://consorcio.mozanielmotos.com.br",
-      dates: "Fevereiro 2024 - Novembro 2024",
-      active: true,
-      description:
-        "Landing page de consórcios para a Mozaniel Motos, com design atraente para captar clientes interessados e direcioná-los a um bot especializado no WhatsApp.",
-      technologies: ["Slim Framework", "JavaScript", "PHP", "Docker"],
-      links: [
-        {
-          type: "Website",
-          href: "https://consorcio.mozanielmotos.com.br",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/mozanielmotos-img.png",
-      video: "",
-    },
-    {
-      title: "Landing Page - Seu Chalé",
-      href: "https://clickston.com.br/SeuChale",
-      dates: "Janeiro 2024",
-      active: true,
-      description:
-        "Landing page para o Seu Chalé, que aluga imóveis próprios. Oferece uma experiência simples e rápida para o cliente agendar a visita ao chalé.",
-      technologies: ["Slim Framework", "JavaScript", "PHP", "Docker"],
-      links: [
-        {
-          type: "Website",
-          href: "https://clickston.com.br/SeuChale",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/clickston-seuchale.png",
-      video: "",
-    },
-    {
       title: "WhatsApp Checker API",
       href: "https://github.com/zzjunior/whatsapp-checker-api",
       dates: "Julho 2024 - Agosto 2024",
