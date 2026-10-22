@@ -99,9 +99,10 @@ export const DATA = {
       location: "Presencial - Natal, Brasil",
       title: "Desenvolvedor Web",
       logoUrl: "/teia.webp",
-      start: "2026",
+      start: "2023",
       end: "Atual",
-      description: "",
+      description:
+        "**Desenvolvedor Web** · 2026 - Atual\n\n**Suporte Técnico Operacional** · 2023 - 2026\n• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente e treinamento de usuários.\n• Atuação na gestão operacional da equipe de suporte, auxiliando na resolução de problemas técnicos, na implementação de melhorias e garantindo a satisfação dos clientes com o Teia CRM.\n• Colaboração com a equipe de desenvolvimento para identificar e solucionar bugs, contribuindo para o aprimoramento contínuo do sistema.",
     },
     {
       company: "TJ Agência",
@@ -113,17 +114,6 @@ export const DATA = {
       end: "Atual",
       description:
         "Atuação como freelancer pela minha agência, com desenvolvimento web desde 2023: landing pages, sistemas sob medida e produtos SaaS próprios (linksbio.me, menu.linksbio.me).",
-    },
-    {
-      company: "Teia CRM",
-      href: "https://teiacrm.com.br",
-      location: "Presencial - Natal, Brasil",
-      title: "Suporte Técnico Operacional",
-      logoUrl: "/teia.webp",
-      start: "2023",
-      end: "2026",
-      description:
-        "• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente e treinamento de usuários.\n• Atuação na gestão operacional da equipe de suporte, auxiliando na resolução de problemas técnicos, na implementação de melhorias e garantindo a satisfação dos clientes com o Teia CRM.\n• Colaboração com a equipe de desenvolvimento para identificar e solucionar bugs, contribuindo para o aprimoramento contínuo do sistema.",
     },
     {
       company: "Umbler",
