@@ -263,7 +263,7 @@ export const DATA = {
     {
       title: "Landing Page - Seu Chalé",
       href: "https://clickston.com.br/SeuChale",
-      dates: "Janeiro 2024 - Atual",
+      dates: "Janeiro 2024",
       active: true,
       description:
         "Landing page para o Seu Chalé, que aluga imóveis próprios. Oferece uma experiência simples e rápida para o cliente agendar a visita ao chalé.",
@@ -304,7 +304,7 @@ export const DATA = {
     {
       title: "image.convert",
       href: "https://conversor.clickston.com.br",
-      dates: "Junho 2024 - Atual",
+      dates: "Junho 2024",
       active: true,
       description:
         "Conversor de imagens para vários formatos, com download imediato.",
@@ -350,7 +350,7 @@ export const DATA = {
     {
       title: "Site - Teia CRM",
       href: "https://teiacrm.com.br",
-      dates: "Novembro 2024 - Atual",
+      dates: "Novembro 2024",
       active: true,
       description:
         "Site do produto SaaS Teia CRM, desenvolvido para apresentar o sistema, o modelo de negócio e os serviços da empresa. É o primeiro CRM voltado 100% para consórcio.",
