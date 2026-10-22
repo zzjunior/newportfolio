@@ -207,7 +207,7 @@ export const DATA = {
       dates: "Fevereiro 2025 - Atual",
       location: "Natal, Brasil.",
       description:
-        "Criador de links personalizados do WhatsApp e páginas de bio para o Instagram. Inspirado em outros sites com mesma ideia e com focos em ser produtos estilo SaaS com planos gratuitos.",
+        "Criador de links personalizados do WhatsApp, páginas de bio para o Instagram, encurtador de links e gerador de QR Code. Inspirado em outros sites com a mesma ideia, com foco em ser um produto estilo SaaS com planos gratuitos.",
       image:
         "/linksbio.png",
       links: [
@@ -291,7 +291,7 @@ export const DATA = {
       dates: "Fevereiro 2025 - Atual",
       active: true,
       description:
-        "Criador de links personalizados do WhatsApp e páginas de bio para o Instagram. Um produto no estilo SaaS, com plano gratuito.",
+        "Criador de links personalizados do WhatsApp, páginas de bio para o Instagram, encurtador de links e gerador de QR Code. Um produto no estilo SaaS, com plano gratuito.",
       technologies: ["Slim Framework", "JavaScript", "PHP", "Docker"],
       links: [
         {
