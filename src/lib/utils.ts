@@ -15,3 +15,11 @@ export function formatDate(date: string | Date) {
     timeZone: "UTC",
   });
 }
+
+export const WHATSAPP_NUMBER = "558491844945";
+export const DEFAULT_WHATSAPP_MESSAGE =
+  "Olá Júnior, vi seu portfólio e gostaria de conversar.";
+
+export function whatsappLink(message: string = DEFAULT_WHATSAPP_MESSAGE) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}

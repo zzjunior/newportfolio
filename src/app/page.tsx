@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -59,17 +58,16 @@ export default function Page() {
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
-              key={work.company}
+              key={work.company + work.title}
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
             >
               <ResumeCard
-                key={work.company}
+                key={work.company + work.title}
                 logoUrl={work.logoUrl}
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
                 href={work.href}
-                badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
               />
@@ -109,7 +107,6 @@ export default function Page() {
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <Badge key={skill.name} className="flex items-center gap-1">
-                  {skill.icon}
                   {skill.name}
                 </Badge>
               </BlurFade>
@@ -154,45 +151,6 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
-        </div>
-      </section>
-      <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  No momento
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl">
-                  O que estou estudando
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Desde que comecei a programar, sempre tive interesse em
-                  aprender novas em qualquer coisa que faço. Geralmente tento resolver problemas cotidianos com projetos simples.
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
         </div>
       </section>
       <section id="contact">
