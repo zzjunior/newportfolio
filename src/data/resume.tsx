@@ -107,10 +107,10 @@ export const DATA = {
 
   work: [
     {
-      company: "Teia CRM",
-      href: "https://teiacrm.com.br",
+      company: "Teia CRM · Grupo Alcance",
+      href: "https://www.joaocarlosvendas.com.br",
       location: "Presencial - Natal, Brasil",
-      logoUrl: "/teia.webp",
+      logoUrl: "/alcance.png",
       start: "2023",
       end: "Atual",
       roles: [
@@ -189,7 +189,7 @@ export const DATA = {
       location: "Teia CRM · Grupo Alcance Vendas",
       description:
         "Plataforma de vendas de consórcios do grupo Alcance Vendas. Atuo como um dos desenvolvedores do time na Teia CRM, no desenvolvimento de novas funcionalidades e na manutenção da plataforma.",
-      image: "/site-vendedor.png",
+      image: "/logo-site-do-vendedor.webp",
       links: [
         {
           title: "Website",
