@@ -184,42 +184,6 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Site - Teia CRM",
-      href: "https://teiacrm.com.br",
-      dates: "Novembro 2024 - Atual",
-      active: true,
-      description:
-        "Site do produto SaaS Teia CRM, desenvolvido para apresentar o sistema, o modelo de negócio e os serviços da empresa. É o primeiro CRM voltado 100% para consórcio.",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "Docker"],
-      links: [
-        {
-          type: "Website",
-          href: "https://teiacrm.com.br",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/teia-clip.mp4",
-    },
-    {
-      title: "linksbio.me",
-      href: "https://linksbio.me/",
-      dates: "Fevereiro 2025 - Atual",
-      active: true,
-      description:
-        "Criador de links personalizados do WhatsApp e páginas de bio para o Instagram. Um produto no estilo SaaS, com plano gratuito.",
-      technologies: ["Slim Framework", "JavaScript", "PHP", "Docker"],
-      links: [
-        {
-          type: "Website",
-          href: "https://linksbio.me/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/linksbio-me.png",
-      video: "",
-    },
-    {
       title: "menu.linksbio.me",
       href: "https://menu.linksbio.me/fortalecai",
       dates: "Novembro 2025 - Atual",
@@ -240,6 +204,24 @@ export const DATA = {
         },
       ],
       image: "/fortalecai-img.png",
+      video: "",
+    },
+    {
+      title: "linksbio.me",
+      href: "https://linksbio.me/",
+      dates: "Fevereiro 2025 - Atual",
+      active: true,
+      description:
+        "Criador de links personalizados do WhatsApp e páginas de bio para o Instagram. Um produto no estilo SaaS, com plano gratuito.",
+      technologies: ["Slim Framework", "JavaScript", "PHP", "Docker"],
+      links: [
+        {
+          type: "Website",
+          href: "https://linksbio.me/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/linksbio-me.png",
       video: "",
     },
     {
@@ -364,6 +346,24 @@ export const DATA = {
       ],
       image: "",
       video: "/qrcode-clip.mp4",
+    },
+    {
+      title: "Site - Teia CRM",
+      href: "https://teiacrm.com.br",
+      dates: "Novembro 2024 - Atual",
+      active: true,
+      description:
+        "Site do produto SaaS Teia CRM, desenvolvido para apresentar o sistema, o modelo de negócio e os serviços da empresa. É o primeiro CRM voltado 100% para consórcio.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "Docker"],
+      links: [
+        {
+          type: "Website",
+          href: "https://teiacrm.com.br",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/teia-clip.mp4",
     },
   ],
 } as const;
