@@ -30,8 +30,8 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <div className="relative group hover:scale-105 transition-transform duration-300">
-              <div className="absolute inset-0 border-2 border-transparent rounded-full transform scale-110 transition-all duration-300 group-hover:border-violet-500"></div>
+              <div className="relative group scale-105">
+              <div className="absolute inset-0 border-2 border-border rounded-full scale-110 transition-colors duration-300 group-hover:border-violet-500"></div>
               <Avatar className="relative size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>

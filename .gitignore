@@ -40,3 +40,7 @@ next-env.d.ts
 
 # pnpm store (criado pelo container)
 .pnpm-store
+
+# planejamento local (superpowers)
+.superpowers/
+docs/superpowers/
