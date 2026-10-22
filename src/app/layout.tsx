@@ -81,7 +81,7 @@ export default function RootLayout({
                 squareSize={2}
                 gridGap={2}
                 color="#8b5cf6"
-                maxOpacity={0.45}
+                maxOpacity={0.6}
                 style={{
                   maskImage: "linear-gradient(to bottom, black, transparent)",
                   WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
