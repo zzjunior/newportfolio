@@ -45,8 +45,28 @@ export default function WorkSection() {
               <div className="flex items-center gap-x-3 flex-1 min-w-0">
                 <LogoImage src={work.logoUrl} alt={work.company} />
                 <div className="flex-1 min-w-0 gap-0.5 flex flex-col">
-                  <div className="font-semibold leading-none flex items-center gap-2">
+                  <div className="font-semibold leading-none flex flex-wrap items-center gap-x-2 gap-y-1">
                     {work.company}
+                    {"group" in work && (
+                      <span className="inline-flex items-center gap-1 text-xs font-normal text-muted-foreground">
+                        · Grupo
+                        <span
+                          aria-hidden
+                          className="inline-block size-3.5 bg-current"
+                          style={{
+                            maskImage: `url(${work.group.logoUrl})`,
+                            WebkitMaskImage: `url(${work.group.logoUrl})`,
+                            maskSize: "contain",
+                            WebkitMaskSize: "contain",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskRepeat: "no-repeat",
+                            maskPosition: "center",
+                            WebkitMaskPosition: "center",
+                          }}
+                        />
+                        <span className="font-semibold text-foreground">{work.group.name}</span>
+                      </span>
+                    )}
                     <span className="relative inline-flex items-center w-3.5 h-3.5">
                       <ChevronRight
                         className={cn(

@@ -111,6 +111,10 @@ export const DATA = {
       href: "https://teiacrm.com.br",
       location: "Presencial - Natal, Brasil",
       logoUrl: "/teia.webp",
+      group: {
+        name: "Alcance",
+        logoUrl: "/alcance-symbol.png",
+      },
       start: "2023",
       end: "Atual",
       roles: [
