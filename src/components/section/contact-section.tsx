@@ -17,7 +17,7 @@ export default function ContactSection() {
           squareSize={2}
           gridGap={2}
           color="#8b5cf6"
-          maxOpacity={0.3}
+          maxOpacity={0.45}
           style={{
             maskImage: "linear-gradient(to bottom, black, transparent)",
             WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
