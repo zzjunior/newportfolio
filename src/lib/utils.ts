@@ -23,3 +23,7 @@ export const DEFAULT_WHATSAPP_MESSAGE =
 export function whatsappLink(message: string = DEFAULT_WHATSAPP_MESSAGE) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
+
+export function formatPeriod(start: string, end: string) {
+  return start === end ? start : `${start} - ${end}`;
+}

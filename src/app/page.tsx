@@ -1,11 +1,13 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
-import { ResumeCard } from "@/components/resume-card";
+import WorkSection from "@/components/section/work-section";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ArrowUpRight } from "lucide-react";
+import { formatPeriod } from "@/lib/utils";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -51,50 +53,59 @@ export default function Page() {
         </BlurFade>
       </section>
       <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Experiência Profissional</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company + work.title}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={work.company + work.title}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
+          <BlurFade delay={BLUR_FADE_DELAY * 6}>
+            <WorkSection />
+          </BlurFade>
         </div>
       </section>
       <section id="education">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Educação</h2>
           </BlurFade>
-          {DATA.education.map((education, id) => (
-            <BlurFade
-              key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-            >
-              <ResumeCard
+          <div className="flex flex-col gap-8">
+            {DATA.education.map((education, index) => (
+              <BlurFade
                 key={education.school}
-                href={education.href}
-                logoUrl={education.logoUrl}
-                altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
-                period={`${education.start} - ${education.end}`}
-              />
-            </BlurFade>
-          ))}
+                delay={BLUR_FADE_DELAY * 8 + index * 0.05}
+              >
+                <Link
+                  href={education.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-x-3 justify-between group"
+                >
+                  <div className="flex items-center gap-x-3 flex-1 min-w-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={education.logoUrl}
+                      alt={education.school}
+                      className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+                    />
+                    <div className="flex-1 min-w-0 flex flex-col gap-0.5">
+                      <div className="font-semibold leading-none flex items-center gap-2">
+                        {education.school}
+                        <ArrowUpRight
+                          className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"
+                          aria-hidden
+                        />
+                      </div>
+                      <div className="font-sans text-sm text-muted-foreground">
+                        {education.degree}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
+                    <span>{formatPeriod(education.start, education.end)}</span>
+                  </div>
+                </Link>
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
       <section id="skills">

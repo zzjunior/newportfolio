@@ -110,34 +110,58 @@ export const DATA = {
       company: "Teia CRM",
       href: "https://teiacrm.com.br",
       location: "Presencial - Natal, Brasil",
-      title: "Desenvolvedor Web",
       logoUrl: "/teia.webp",
       start: "2023",
       end: "Atual",
-      description:
-        "**Desenvolvedor Web** · 2026 - Atual\n\n**Suporte Técnico Operacional** · 2023 - 2026\n• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente e treinamento de usuários.\n• Atuação na gestão operacional da equipe de suporte, auxiliando na resolução de problemas técnicos, na implementação de melhorias e garantindo a satisfação dos clientes com o Teia CRM.\n• Colaboração com a equipe de desenvolvimento para identificar e solucionar bugs, contribuindo para o aprimoramento contínuo do sistema.",
+      roles: [
+        {
+          title: "Desenvolvedor Web",
+          start: "2026",
+          end: "Atual",
+          description: "",
+        },
+        {
+          title: "Suporte Técnico Operacional",
+          start: "2023",
+          end: "2026",
+          description:
+            "• Suporte operacional, integrações, desenvolvimento de novas funcionalidades, manutenção de sistemas, atendimento ao cliente e treinamento de usuários.\n• Atuação na gestão operacional da equipe de suporte, auxiliando na resolução de problemas técnicos, na implementação de melhorias e garantindo a satisfação dos clientes com o Teia CRM.\n• Colaboração com a equipe de desenvolvimento para identificar e solucionar bugs, contribuindo para o aprimoramento contínuo do sistema.",
+        },
+      ],
     },
     {
       company: "TJ Agência",
       href: "",
       location: "Remoto - Natal, Brasil",
-      title: "Desenvolvedor Web Freelancer",
       logoUrl: "/TJ.png",
       start: "2022",
       end: "Atual",
-      description:
-        "Atuação como freelancer pela minha agência, com desenvolvimento web desde 2023: landing pages, sistemas sob medida e produtos SaaS próprios (linksbio.me, menu.linksbio.me).",
+      roles: [
+        {
+          title: "Desenvolvedor Web Freelancer",
+          start: "2022",
+          end: "Atual",
+          description:
+            "Atuação como freelancer pela minha agência, com desenvolvimento web desde 2023: landing pages, sistemas sob medida e produtos SaaS próprios (linksbio.me, menu.linksbio.me).",
+        },
+      ],
     },
     {
       company: "Umbler",
       href: "https://umbler.com/br/",
       location: "Home Office - Porto Alegre, Brasil",
-      title: "Customer Success Host Analyst",
       logoUrl: "/umbler.png",
       start: "2022",
       end: "2022",
-      description:
-        "• Atendimento aos clientes via chat e e-mail e auxílio em projetos. Suporte a clientes com dificuldades em websites (WordPress, HTML, CSS, JavaScript e PHP), FTP, bancos de dados MySQL / SQL Server, configuração de DNS, registro de domínios e servidores SMTP, POP e IMAP.",
+      roles: [
+        {
+          title: "Customer Success Host Analyst",
+          start: "2022",
+          end: "2022",
+          description:
+            "• Atendimento aos clientes via chat e e-mail e auxílio em projetos. Suporte a clientes com dificuldades em websites (WordPress, HTML, CSS, JavaScript e PHP), FTP, bancos de dados MySQL / SQL Server, configuração de DNS, registro de domínios e servidores SMTP, POP e IMAP.",
+        },
+      ],
     },
   ],
   education: [
