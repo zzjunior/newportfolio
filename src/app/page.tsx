@@ -7,7 +7,9 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { ArrowUpRight } from "lucide-react";
-import { formatPeriod } from "@/lib/utils";
+import { formatPeriod, whatsappLink } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Icons } from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -18,17 +20,42 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <span className="mb-2 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-muted-foreground">
+                  <span className="size-2 rounded-full bg-emerald-500 animate-pulse" aria-hidden />
+                  Disponível para projetos
+                </span>
+              </BlurFade>
               <BlurFadeText
               delay={BLUR_FADE_DELAY}
               className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
               yOffset={8}
-              text={DATA.name}
+              text={`Olá, eu sou o ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
-              className="max-w-[600px] md:text-xl"
+              className="max-w-[600px] text-muted-foreground md:text-xl"
               delay={BLUR_FADE_DELAY}
               text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                <div className="flex flex-wrap gap-2 pt-3">
+                  <Link
+                    href={whatsappLink()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={buttonVariants()}
+                  >
+                    <Icons.whatsapp className="size-4" />
+                    Vamos conversar
+                  </Link>
+                  <Link
+                    href="#projects"
+                    className={buttonVariants({ variant: "outline" })}
+                  >
+                    Ver projetos
+                  </Link>
+                </div>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <div className="relative group scale-105">
@@ -43,14 +70,16 @@ export default function Page() {
         </div>
       </section>
       <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">Sobre mim?</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            <Markdown>{DATA.summary}</Markdown>
-          </div>
-        </BlurFade>
+        <div className="flex min-h-0 flex-col gap-y-4">
+          <BlurFade delay={BLUR_FADE_DELAY * 3}>
+            <h2 className="text-xl font-bold">Sobre</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+            <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+              <Markdown>{DATA.summary}</Markdown>
+            </div>
+          </BlurFade>
+        </div>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
