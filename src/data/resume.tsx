@@ -1,6 +1,19 @@
 import { Icons } from "@/components/icons"; // importa icons
 import { WHATSAPP_NUMBER, whatsappLink } from "@/lib/utils";
 import { AppWindow, Bot, HomeIcon, LayoutTemplate } from "lucide-react";
+import { Cpp } from "@/components/ui/svgs/cpp";
+import { Css } from "@/components/ui/svgs/css";
+import { Docker } from "@/components/ui/svgs/docker";
+import { Flutter } from "@/components/ui/svgs/flutter";
+import { Git } from "@/components/ui/svgs/git";
+import { Html } from "@/components/ui/svgs/html";
+import { Javascript } from "@/components/ui/svgs/javascript";
+import { Laravel } from "@/components/ui/svgs/laravel";
+import { Mysql } from "@/components/ui/svgs/mysql";
+import { Nodejs } from "@/components/ui/svgs/nodejs";
+import { Php } from "@/components/ui/svgs/php";
+import { Python } from "@/components/ui/svgs/python";
+import { Tailwindcss } from "@/components/ui/svgs/tailwindcss";
 
 export const DATA = {
   name: "Júnior Santos",
@@ -14,19 +27,19 @@ export const DATA = {
     "Sou apaixonado por tecnologia desde 2019, quando conquistei meu primeiro computador. Desde então estudo de hardware a software e, em 2020, comecei a programar. Hoje atuo como **Desenvolvedor Web na Teia CRM** e atendo clientes como freelancer pela **TJ Agência**.\n\nMeu foco é desenvolvimento web, automação de processos com inteligência artificial e análise de dados. Gosto de resolver problemas reais com soluções simples, rápidas e bem feitas.",
   avatarUrl: "/me.jpeg",
   skills: [
-    { name: "JavaScript" },
-    { name: "PHP" },
-    { name: "Node.js" },
-    { name: "Python" },
-    { name: "MySQL" },
-    { name: "C++" },
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "TailwindCSS" },
-    { name: "Docker" },
-    { name: "Git" },
-    { name: "Laravel" },
-    { name: "Flutter" },
+    { name: "JavaScript", icon: Javascript },
+    { name: "PHP", icon: Php },
+    { name: "Node.js", icon: Nodejs },
+    { name: "Python", icon: Python },
+    { name: "MySQL", icon: Mysql },
+    { name: "C++", icon: Cpp },
+    { name: "HTML", icon: Html },
+    { name: "CSS", icon: Css },
+    { name: "TailwindCSS", icon: Tailwindcss },
+    { name: "Docker", icon: Docker },
+    { name: "Git", icon: Git },
+    { name: "Laravel", icon: Laravel },
+    { name: "Flutter", icon: Flutter },
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
