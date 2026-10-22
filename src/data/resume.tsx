@@ -175,7 +175,8 @@ export const DATA = {
       degree: "Bacharelado em Ciências e Tecnologia",
       logoUrl: "/ufrn.png",
       start: "2021",
-      end: "2027 (previsão)",
+      end: "2024",
+      status: "Não concluído · 6º período",
     },
     {
       school: "Estácio de Sá",
@@ -183,7 +184,7 @@ export const DATA = {
       degree: "Análise e Desenvolvimento de Sistemas",
       logoUrl: "/logo-estacio.webp",
       start: "2024",
-      end: "2026 (previsão)",
+      end: "2027 (previsão)",
     },
   ],
   hackathons: [

@@ -129,6 +129,11 @@ export default function Page() {
                       <div className="font-sans text-sm text-muted-foreground">
                         {education.degree}
                       </div>
+                      {"status" in education && (
+                        <div className="font-sans text-xs text-muted-foreground/80">
+                          {education.status}
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
