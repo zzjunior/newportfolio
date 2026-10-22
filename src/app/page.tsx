@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import HackathonsSection from "@/components/section/hackathons-section";
 import ContactSection from "@/components/section/contact-section";
 import ProjectsSection from "@/components/section/projects-section";
 import ServicesSection from "@/components/section/services-section";
@@ -83,16 +84,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="services">
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <ServicesSection />
-        </BlurFade>
-      </section>
-      <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <ProjectsSection />
-        </BlurFade>
-      </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -165,6 +156,21 @@ export default function Page() {
             ))}
           </div>
         </div>
+      </section>
+      <section id="projects">
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <ProjectsSection />
+        </BlurFade>
+      </section>
+      <section id="hackathons">
+        <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <HackathonsSection />
+        </BlurFade>
+      </section>
+      <section id="services">
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <ServicesSection />
+        </BlurFade>
       </section>
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>

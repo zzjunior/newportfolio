@@ -8,6 +8,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import Particles from "@/components/magicui/particles";
+import BackToTop from "@/components/back-to-top";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -88,6 +89,7 @@ export default function RootLayout({
             <div className="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
               {children}
             </div>
+            <BackToTop />
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>

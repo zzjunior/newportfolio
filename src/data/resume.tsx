@@ -182,6 +182,66 @@ export const DATA = {
       end: "2026 - Previsão",
     },
   ],
+  hackathons: [
+    {
+      title: "linksbio.me",
+      dates: "Fevereiro 2025 - Atual",
+      location: "Natal, Brasil.",
+      description:
+        "Criador de links personalizados do WhatsApp e páginas de bio para o Instagram. Inspirado em outros sites com mesma ideia e com focos em ser produtos estilo SaaS com planos gratuitos.",
+      image:
+        "/linksbio.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://linksbio.me/",
+        },
+      ],
+    },
+    {
+      title: "menu.linksbio.me",
+      dates: "Outubro 2025 - Atual",
+      location: "Natal, Brasil.",
+      description:
+        "Cardápio digital para lojas e lanchonetes. Open source e gratuito para pequenos negócios.",
+      image:
+        "/fortalecai-img.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://menu.linksbio.me/fortalecai",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/zzjunior/menu.linksbio.me"
+        }
+      ],
+    },
+    {
+      title: "WhatsApp Checker API",
+      dates: "Julho 2024 - Agosto 2024",
+      location: "Natal, Brasil.",
+      description: "API desenvolvida para checagem de existência de números no WhatsApp de forma rápida, sem riscos de bloqueios de números na checagem.",
+      image: "/whatsapp-checker-img.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/zzjunior/whatsapp-checker-api"
+        },
+        {
+          title: "API Documentation",
+          icon: <Icons.postman className="h-4 w-4" />,
+          href: "https://documenter.getpostman.com/view/46605612/2sBXVbFsXL"
+        }
+      ]
+    }
+
+  ],
+
   projects: [
     {
       title: "menu.linksbio.me",
